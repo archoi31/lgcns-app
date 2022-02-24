@@ -15,14 +15,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 -유효성도 레이아웃만 
 
 
-## 설치방법
-
-### `npx create-react-app lgcns-app`
-
-### `npm install node-sass`
-### `npm i styled-components`
-### `npm i styled-reset`
-
 
 
 ## Available Scripts
