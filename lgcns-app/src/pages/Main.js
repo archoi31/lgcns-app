@@ -10,12 +10,13 @@ function Main(props) {
  
   let fullpageCtrl = document.querySelector('.fullpage-controls');
   const settings = {
-    dots: false,  // 점은 안 보이게
-    infinite: true, // 무한으로 즐기게
+    dots: false,  
+    infinite: true, 
     speed: 500,
-    slidesToShow: 3, //4장씩 보이게 해주세요
-    slidesToScroll: 1, //1장씩 넘어가세요
+    slidesToShow: 3, 
+    slidesToScroll: 1, 
   };
+
   return (
     <FullPage controls controlsProps={{className: 'fullpage-controls'}} className="fullpage">
     <Slide className="fullpage-slide main-slide1">
@@ -35,8 +36,8 @@ function Main(props) {
           Center인가 ?
           </h1>
           <h2  className="title2">대한민국 AM No.1 파트너</h2>
-          <p className="txt-con">Global BP Open Innovation을 통해 확보된 Application <br/>
-              Modernization 역량을 기반하여 고객에게 Application <br/>
+          <p className="txt-con">Global BP Open Innovation을 통해 확보된 Application 
+              Modernization 역량을 기반하여 고객에게 Application 
               Modernization 1등 파트너로 인정받고 있습니다.
           </p>
         </div>
@@ -81,26 +82,7 @@ function Main(props) {
         <button className="btn-more">더보기</button>
       </div>
      
-      <Slider {...settings}>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
-        </Slider>
+  
       <SlickSlider/>
       <div className="contact">
         <p>
