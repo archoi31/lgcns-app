@@ -2,6 +2,18 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+##작업범위
+비즈니스 
+-슬라이더레이아웃까지 구현
+-탭까지 나오게(클릭으로)
+
+케이스스터디
+-더보기는 레이아웃만
+
+콘텍트어스
+-유효성도 레이아웃만 
+
+
 ## 설치방법
 
 ### `npx create-react-app lgcns-app`
