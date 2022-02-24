@@ -1,0 +1,27 @@
+@import "./variables";
+
+
+@mixin button{
+    padding:12px 1.6rem;
+    font-size: 16px;
+    border-radius: 2.4rem;
+    border:0;
+  }
+
+@mixin mobile {
+  @media (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-tablet - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}
