@@ -2,7 +2,19 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## 설치방법
+
+### `npx create-react-app lgcns-app`
+
+### `npm install node-sass`
+### `npm i styled-components`
+### `npm i styled-reset`
+
+
+
 ## Available Scripts
+
+
 
 In the project directory, you can run:
 
