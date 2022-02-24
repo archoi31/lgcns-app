@@ -6,6 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### `npx create-react-app lgcns-app`
 
+### `npm install node-sass`
 ### `npm i styled-components`
 ### `npm i styled-reset`
 
