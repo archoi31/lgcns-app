@@ -3,6 +3,7 @@
 
 html {
   font-size: 10px !important;
+  word-break: keep-all;
   .App {
     font-family: "NanumSquare", sans-serif;
     color: #111;
@@ -187,6 +188,7 @@ html {
       padding: 16vh 5vw 0;
       background-color: #fff;
       background-size: cover;
+      background-position: center;
       .color-primary {
         color: $primary-color;
       }
@@ -432,6 +434,8 @@ html {
       .logo {
         display: inline-block;
         background-image: url("../public/images/footer_logo.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
         width: 173px;
         height: 39px;
         vertical-align: middle;
@@ -532,7 +536,18 @@ html {
         .txt-con {
           font-size: 1.6rem;
         }
+        &.main-slide1{
+          .title2{
+            margin-top:20vh;
+            text-shadow: 4px 4px 8px rgba(255, 255, 255, 0.8);
+          }
+          .title1,p{
+            text-shadow: 4px 4px 8px rgba(255, 255, 255, 0.8);
+          }
+          background-image: url("../public/images/m-main-bg-1.png");
+        }
         &.main-slide2 {
+          background-image: url("../public/images/m-main-bg-2.png");
           .info-wrap {
             .info-icon {
               .circle {
@@ -570,9 +585,12 @@ html {
       .footer {
         padding: 2.4rem;
         flex-direction: column;
+        text-align: center;
         .logo {
           display: block;
           margin: 0 auto 0.8rem;
+          width: 100px;
+          height: 29px;
         }
         .copy {
           margin-top: 0.8rem;
