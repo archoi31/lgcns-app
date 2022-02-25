@@ -3,6 +3,7 @@ import { FullPage, Slide } from 'react-full-page';
 import Footer from "../components/Footer";
 import SlickSlider from "../components/SlickSlider";
 import Slider from "react-slick";
+import '../style/main.scss';
 
 
 
