@@ -1,273 +1,232 @@
 @import "./mixin";
 
-.fullpage-controls {
-    position: absolute;
-    bottom: 16px;
-    width: 100%;
-    text-align: center;
-    button {
-      display: none;
-    }
-    button:last-child {
-      display: block;
+  
+.fullpage-slide {
+ 
+  &.about-slide1 {
+    padding:0;
+    .title1{
+      text-align: center;
+      width: 40vw;
       margin: 0 auto;
-      background-image: url("../../public/images/ic_screen_down.svg");
-      background-color: transparent; /* make the button transparent */
-      background-repeat: no-repeat; /* make the background image appear only once */
-      background-position: 0px 0px; /* equivalent to 'top left' */
-      border: none; /* assuming we don't want any borders */
-      cursor: pointer; /* make the cursor like hovering over an <a> element */
-      height: 48px;
-      width: 48px;
-      text-indent: -999px;
-      overflow: hidden;
-      animation: bounce 1.5s infinite ease-in-out;
+      padding-top:16vh;
     }
-    @keyframes bounce {
-      0% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(16px);
-      }
-      100% {
-        transform: translateY(0);
-      }
-    }
-  }
-  .fullpage-slide {
-    padding: 16vh 5vw 0;
-    background-color: #fff;
-    background-size: cover;
-    background-position: center;
-    .color-primary {
-      color: $primary-color;
-    }
-    .title1 {
-      font-size: 4.8rem;
-      font-weight: 800;
-      line-height: 140%;
-      margin-bottom: 2.4rem;
+    .txt-con{
+      text-align: center;
+      width: 40vw;
+      margin: 2vh auto 0;
     }
     .title2 {
-      font-size: 3.6rem;
-      font-weight: 800;
-      margin-bottom: 1.6rem;
+      margin-top: 5vh;
     }
-    .txt-con {
-      font-size: 2.4rem;
-      line-height: 140%;
-    }
-    &.slide1 {
-      .title1{
-        text-align: center;
-        width: 40vw;
-      }
-      .txt-con{
-        width: 33vw;
-      }
-      .title2 {
-        margin-top: 5vh;
-      }
-      background-image: url("../../public/images/about-bg-1.png");
-    }
-    &.slide2 {
-      
-      .info-wrap {
-        display: flex;
-        .info-txt {
-          width: 40%;
-          color: #fff;
-          .txt-con {
-            color: #eeeeee;
+    .aws-wrap{
+      background: #FFFFFFB2;
+      margin-top:4vh;
+      width: 100%;
+      height: 52vh;
+      text-align: center;
+      .aws-img{
+        position: relative;
+        display: inline-block;
+        background-image: url("../../public/images/about-aws.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 900px;
+        height: 40vh;
+        .aws-list{
+          position: absolute;
+          font-size:1.8rem;
+          line-height: 160%;
+          text-align: left;
+          li{
+            list-style-type : square;
+            &::marker{
+              color:$primary-color;
+            }
           }
-          .title1 {
-            margin-top: 10vh;
-            color: $primary-color;
+          &:first-child{
+            bottom:0vh;
+            left:3vw;
+          }
+          &:last-child{
+            bottom:0vh;
+            right:0vw;
           }
         }
-        .info-icon {
-          width: 60%;
-          position: relative;
-          .circle {
-            position: absolute;
-            padding: 5vw;
-            border-radius: 50%;
-            top: 20%;
-            left: 0;
-            background: #ffffff1a;
-            text-align: center;
-            .icon::before {
-              content: "";
-              display: inline-block;
-              width: 80px;
-              height: 80px;
-            }
-            &:nth-child(1) {
-              .icon::before {
-                background-image: url("../../public/images/main-icon2.svg");
-              }
-            }
-            &:nth-child(2) {
-              left: 30%;
-              .icon::before {
-                background-image: url("../../public/images/main-icon2.svg");
-              }
-            }
-            &:nth-child(3) {
-              left: 60%;
-              .icon::before {
-                background-image: url("../../public/images/main-icon3.svg");
-              }
-            }
-            .icon {
-              display: inline-block;
-              width: 180px;
-              height: 180px;
-            }
-            p {
-              padding-top: 16px;
-              font-size: 1.8rem;
-              color: #fff;
-              line-height: 160%;
-            }
-          }
+      }
+    }
+    background-image: url("../../public/images/about-bg-1.png");
+  }
+  &.about-slide2 {
+    .title1{
+      text-align: center;
+      margin: 0 auto;
+    }
+    .txt-con{
+      text-align: center;
+      width: 50vw;
+      margin: 2vh auto 0;
+    }
+    .about-wrap{
+      display: flex;
+      margin: 4vh auto 8vh;
+      .box{
+        margin-right:40px;
+        flex:1;
+        background-color: #F4F4F4;
+        padding:2.4rem;
+        text-align: center;
+        h2{
+          font-size: 2rem;
+          font-weight: 700;
+          padding-bottom: 2.4rem;
+        }
+        p{
+          color:#666666;
+          font-size: 1.6rem;
+          line-height: 160%;
+        }
+        &:last-child{
+          margin:0;
         }
       }
     }
     
   }
-  @include desktop-md {
-    .fullpage-slide {
-      .title1 {
-        font-size: 3.6rem;
-      }
-      .title2 {
-        font-size: 2.8rem;
-      }
-      .txt-con {
-        font-size: 1.8rem;
-      }
-    }
-  }
-  @include desktop-sm {
-    .fullpage-slide {
-      &.main-slide2 {
-        .info-wrap {
-          flex-direction: column;
-          .info-txt,
-          .info-icon {
-            width: 100%;
-          }
-          .info-txt {
-            margin-bottom: 8vh;
-            .title1 {
-              margin-top: 0vh;
-            }
-          }
-        }
-      }
-      &.main-slide3 {
-        .asw-wrap {
-          .asw-img {
-            width: 80vw;
-          }
-        }
-        .txt-wrap {
-          flex-direction: column;
-          align-items: flex-start;
-          p {
-            margin: 0;
-          }
-        }
-      }
-      &.main-slide4 {
-        .contact {
-          p {
-            font-size: 2rem;
-          }
-        }
-      }
-    }
-  }
-  @include tablet {
   
-
-    .fullpage-slide {
-      .title1 {
-        font-size: 4rem;
-      }
-      .title2 {
-        font-size: 3.2rem;
-      }
-      .txt-con {
-        font-size: 1.8rem;
-      }
-      &.main-slide1{
-        .title1{
-          width: 70vw;
+}
+@include desktop-md {
+  .fullpage-slide {
+    .title1 {
+      font-size: 3.6rem;
+    }
+    .title2 {
+      font-size: 2.8rem;
+    }
+    .txt-con {
+      font-size: 1.8rem;
+    }
+  }
+}
+@include desktop-sm {
+  .fullpage-slide {
+    &.main-slide2 {
+      .info-wrap {
+        flex-direction: column;
+        .info-txt,
+        .info-icon {
+          width: 100%;
         }
-        .txt-con{
-          width: 70vw;
+        .info-txt {
+          margin-bottom: 8vh;
+          .title1 {
+            margin-top: 0vh;
+          }
+        }
+      }
+    }
+    &.main-slide3 {
+      .asw-wrap {
+        .asw-img {
+          width: 80vw;
+        }
+      }
+      .txt-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+        p {
+          margin: 0;
+        }
+      }
+    }
+    &.main-slide4 {
+      .contact {
+        p {
+          font-size: 2rem;
         }
       }
     }
   }
-  @include mobile {
-    .fullpage-slide {
-      .title1 {
-        font-size: 2.8rem;
+}
+@include tablet {
+
+
+  .fullpage-slide {
+    .title1 {
+      font-size: 4rem;
+    }
+    .title2 {
+      font-size: 3.2rem;
+    }
+    .txt-con {
+      font-size: 1.8rem;
+    }
+    &.main-slide1{
+      .title1{
+        width: 70vw;
       }
-      .title2 {
-        font-size: 2rem;
+      .txt-con{
+        width: 70vw;
       }
-      .txt-con {
-        font-size: 1.6rem;
+    }
+  }
+}
+@include mobile {
+  .fullpage-slide {
+    .title1 {
+      font-size: 2.8rem;
+    }
+    .title2 {
+      font-size: 2rem;
+    }
+    .txt-con {
+      font-size: 1.6rem;
+    }
+    &.main-slide1{
+      .title2{
+        margin-top:20vh;
       }
-      &.main-slide1{
-        .title2{
-          margin-top:20vh;
-        }
-        .title1,.txt-con{
-          text-shadow: 4px 4px 5px rgba(255, 255, 255, 0.3);
-        }
-        background-image: url("../../public/images/m-main-bg-1.png");
+      .title1,.txt-con{
+        text-shadow: 4px 4px 5px rgba(255, 255, 255, 0.3);
       }
-      &.main-slide2 {
-        background-image: url("../../public/images/m-main-bg-2.png");
-        .info-wrap {
-          .info-icon {
-            .circle {
-              .icon {
-                width: 28vw;
-                height: 28vw;
-                &::before {
-                  width: 10vw;
-                  height: 10vw;
-                  background-size: 100%;
-                }
-                p {
-                  font-size: 1.4rem;
-                }
+      background-image: url("../../public/images/m-main-bg-1.png");
+    }
+    &.main-slide2 {
+      background-image: url("../../public/images/m-main-bg-2.png");
+      .info-wrap {
+        .info-icon {
+          .circle {
+            .icon {
+              width: 28vw;
+              height: 28vw;
+              &::before {
+                width: 10vw;
+                height: 10vw;
+                background-size: 100%;
+              }
+              p {
+                font-size: 1.4rem;
               }
             }
           }
         }
       }
-      &.main-slide4 {
-        .title-wrap {
-          .btn-more {
-            padding: 0.4rem 1.6rem;
-          }
+    }
+    &.main-slide4 {
+      .title-wrap {
+        .btn-more {
+          padding: 0.4rem 1.6rem;
         }
-        .contact {
-          flex-direction: column;
-          text-align: center;
-          button {
-            margin-top: 1.6rem;
-          }
+      }
+      .contact {
+        flex-direction: column;
+        text-align: center;
+        button {
+          margin-top: 1.6rem;
         }
       }
     }
-
   }
+
+}
