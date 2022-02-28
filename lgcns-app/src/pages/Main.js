@@ -23,8 +23,8 @@ function Main(props) {
     <Slide className="fullpage-slide main-slide1">
       <h2 className="title2">급변하는 비즈니스 환경 속,</h2>
       <h1 className="title1">
-      <span className="color-primary">비즈니스 성공</span>을 이끄는 <span className="color-primary">변화의 시작</span>,  
-      <span className="color-primary">Launch센터</span>와 함께 하세요. 
+      <span className="color-primary">비즈니스 성공</span>을 이끄는 <span className="color-primary">변화의 시작</span>,   
+      <span className="color-primary"> Launch센터</span>와 함께 하세요. 
       </h1>
       <p className="txt-con">고객이 원하는 것을 빠르게 캐치하여 서비스 반영하기 위해서, 
       기업은 “System , Process, 조직 역량” 세 가지 측면에서 반드시 변화해야 합니다.
