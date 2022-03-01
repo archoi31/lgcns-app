@@ -211,6 +211,12 @@ html {
         .title2 {
           margin-top: 5vh;
         }
+        .title1 {
+          width: 50vw;
+        }
+        .txt-con {
+          width: 40vw;
+        }
         background-image: url("../public/images/main-bg-1.png");
       }
       &.main-slide2 {
@@ -523,6 +529,15 @@ html {
         .txt-con {
           font-size: 1.8rem;
         }
+        &.main-slide1 {
+          .txt-con {
+            width: 80vw;
+          }
+          .title1 {
+            width: 80vw;
+          }
+          background-image: url("../public/images/m-main-bg-1.png");
+        }
       }
     }
     @include mobile {
@@ -536,13 +551,14 @@ html {
         .txt-con {
           font-size: 1.6rem;
         }
-        &.main-slide1{
-          .title2{
-            margin-top:20vh;
-            text-shadow: 4px 4px 8px rgba(255, 255, 255, 0.8);
+        &.main-slide1 {
+          .title2 {
+            margin-top: 20vh;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
           }
-          .title1,p{
-            text-shadow: 4px 4px 8px rgba(255, 255, 255, 0.8);
+          .title1,
+          p {
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
           }
           background-image: url("../public/images/m-main-bg-1.png");
         }
