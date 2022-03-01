@@ -9,34 +9,6 @@ import icon3 from "../assets/business-ic-3.svg";
 import icon4 from "../assets/business-ic-4.svg";
 import icon5 from "../assets/business-ic-5.svg";
 
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{
-        ...style,
-        display: "block",
-      }}
-      onClick={onClick}
-    />
-  );
-}
-
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{
-        ...style,
-        display: "block",
-      }}
-      onClick={onClick}
-    />
-  );
-}
-
 const SlickSliderBusiness = ({ data, handleRen }) => {
   //부모 컴포넌트에서 받은 state와 method
 
@@ -47,8 +19,6 @@ const SlickSliderBusiness = ({ data, handleRen }) => {
     speed: 500,
     slidesToShow: 4, //3장씩 보이게 해주세요
     slidesToScroll: 1, //1장씩 넘어가세요
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
     responsive: [
       // 반응형 웹 구현 옵션
       {
