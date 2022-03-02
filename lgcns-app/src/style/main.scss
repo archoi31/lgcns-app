@@ -413,3 +413,16 @@
     }
   }
 }
+@include mobile-sm {
+  .fullpage-slide {
+    .title1 {
+      font-size: 2rem;
+    }
+    .title2 {
+      font-size: 1.8rem;
+    }
+    .txt-con {
+      font-size: 1.5rem;
+    }
+  }
+}

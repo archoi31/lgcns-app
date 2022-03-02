@@ -18,6 +18,7 @@
       font-weight: bold;
       font-size: 2rem;
       padding-bottom: 8vh;
+      background: none;
       &::after {
         content: "";
         background-image: url("../../public/images/btn-arrow-right.svg");
@@ -116,7 +117,7 @@
       display: none;
       width: 90vw;
       background-color: #f4f4f4;
-      height: 54vh;
+      min-height: 54vh;
       &.show {
         display: block;
       }
@@ -124,11 +125,13 @@
         margin-bottom: 1rem;
       }
       .service-wrap {
-        display: flex;
         margin-top: 5vh;
         align-items: center;
+        min-height: 25vh;
+        overflow: hidden;
         .service {
           display: flex;
+          float: left;
           margin-right: 4vw;
           .icon {
             width: 80px;
@@ -171,13 +174,21 @@
                 font-size: 1.6rem;
                 width: 240px;
                 padding: 1.4rem;
-                top: 110%;
                 left: 0%;
                 line-height: 120%;
                 z-index: 3;
                 font-weight: 400;
                 box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.15);
                 border-radius: 4px;
+                &.memo1 {
+                  top: 110%;
+                }
+                &.memo2 {
+                  top: 110%;
+                }
+                &.memo3 {
+                  bottom: 110%;
+                }
                 h4 {
                   font-weight: bold;
                   color: #111;
@@ -214,10 +225,131 @@
   }
 }
 @include desktop-md {
+  .fullpage-slide {
+    &.business-slide2 {
+      .tab-content {
+        .service-wrap {
+          .service:nth-child(2) {
+            margin-bottom: 2.4rem;
+          }
+        }
+      }
+    }
+  }
 }
 @include desktop-sm {
+  .fullpage-slide {
+    &.business-slide1 {
+      .txt-con {
+        width: 90vw;
+      }
+      .start-btn {
+        padding-bottom: 2vh;
+      }
+    }
+    &.business-slide2 {
+      .tab-content {
+        padding: 2.4rem;
+        .service-wrap {
+          .service {
+            .txt {
+              max-width: 32vw;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @include tablet {
+  .fullpage-slide {
+    &.business-slide2 {
+      .tab {
+        li {
+          padding: 1rem;
+          p {
+            display: none;
+          }
+        }
+        margin-top: 12vh;
+      }
+      .tab-content {
+        padding: 2.4rem;
+        .service-wrap {
+          .service {
+            width: 100%;
+            &:nth-child(1) {
+              margin-bottom: 2.4rem;
+            }
+            .txt {
+              max-width: 60vw;
+              h2 {
+                font-size: 1.8rem;
+                padding: 1.6rem 0 0.8rem;
+              }
+              h3 {
+                font-size: 1.6rem;
+              }
+              p {
+                font-size: 1.4rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @include mobile {
+  .fullpage-slide {
+    &.business-slide2 {
+      .tab-content {
+        .service-wrap {
+          .service {
+            .txt {
+              .pop-memo {
+                &.memo1 {
+                  left: -120px;
+                }
+                &.memo2 {
+                  left: -100px;
+                }
+                &.memo3 {
+                  left: -100px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include mobile-sm {
+  .fullpage-slide {
+    &.business-slide2 {
+      .tab-content {
+        .service-wrap {
+          .service {
+            flex-direction: column;
+            .txt {
+              max-width: 100%;
+              padding-left: 0rem;
+              .pop-memo {
+                &.memo1 {
+                  left: -120px;
+                }
+                &.memo2 {
+                  left: -200px;
+                }
+                &.memo3 {
+                  left: -220px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,0 +1,324 @@
+@import "./mixin";
+
+.fullpage-slide {
+  &.mobile {
+    display: none;
+  }
+  &.tech-slide1 {
+    .title1 {
+      color: #fff;
+      text-align: center;
+      padding: 24vh 0 4vh;
+    }
+    .txt-con {
+      color: #fff;
+      text-align: center;
+      padding-bottom: 8vh;
+    }
+    .box {
+      &:nth-child(1) {
+        &:hover {
+          .icon {
+            background-image: url("../../public/images/tech-ic1.png");
+          }
+        }
+        .icon {
+          background-image: url("../../public/images/tech-ic1-gray.png");
+        }
+      }
+      &:nth-child(2) {
+        &:hover {
+          .icon {
+            background-image: url("../../public/images/tech-ic2.png");
+          }
+        }
+        .icon {
+          background-image: url("../../public/images/tech-ic2-gray.png");
+        }
+      }
+    }
+    background-image: url("../../public/images/technology-bg1.png");
+  }
+  &.tech-slide2 {
+    position: relative;
+    .box-wrap {
+      padding: 16vh 0 4vh;
+    }
+    .box {
+      &:nth-child(1) {
+        &:hover {
+          .icon {
+            background-image: url("../../public/images/tech-ic3.png");
+          }
+        }
+        .icon {
+          background-image: url("../../public/images/tech-ic3-gray.png");
+        }
+      }
+      &:nth-child(2) {
+        &:hover {
+          .icon {
+            background-image: url("../../public/images/tech-ic4.png");
+          }
+        }
+        .icon {
+          background-image: url("../../public/images/tech-ic4-gray.png");
+        }
+      }
+      &:nth-child(3) {
+        &:hover {
+          .icon {
+            background-image: url("../../public/images/tech-ic5.png");
+          }
+        }
+        .icon {
+          background-image: url("../../public/images/tech-ic5-gray.png");
+        }
+      }
+      &:nth-child(4) {
+        &:hover {
+          .icon {
+            background-image: url("../../public/images/tech-ic6.png");
+          }
+        }
+        .icon {
+          background-image: url("../../public/images/tech-ic6-gray.png");
+        }
+      }
+      &:nth-child(5) {
+        &:hover {
+          .icon {
+            background-image: url("../../public/images/tech-ic7.png");
+          }
+        }
+        .icon {
+          background-image: url("../../public/images/tech-ic7-gray.png");
+        }
+      }
+      &:nth-child(6) {
+        &:hover {
+          .icon {
+            background-image: url("../../public/images/tech-ic8.png");
+          }
+        }
+        .icon {
+          background-image: url("../../public/images/tech-ic8-gray.png");
+        }
+      }
+    }
+    background-image: url("../../public/images/technology-bg2.png");
+  }
+  .box-wrap {
+    display: grid;
+    width: 80vw;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    .box {
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4rem;
+      border-radius: 20px;
+      margin-bottom: 4vh;
+      border: 1px solid #ccc;
+      &:nth-child(odd) {
+        margin-right: 2vw;
+      }
+      &:hover {
+        h3 {
+          color: $primary-color;
+        }
+        border: 1px solid $primary-color;
+      }
+
+      .txt {
+        width: 70%;
+        h3 {
+          font-size: 2.4rem;
+          font-weight: 800;
+          padding-bottom: 2rem;
+          transition: all 0.5s;
+        }
+        p {
+          font-size: 1.8rem;
+          line-height: 140%;
+          color: #666666;
+          transition: all 0.5s;
+        }
+      }
+      .icon {
+        transition: all 0.5s;
+        width: 90px;
+        height: 90px;
+        display: inline-block;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+}
+@include tablet {
+  .fullpage-slide {
+    .box-wrap {
+      .box {
+        padding: 2.4rem;
+        .txt {
+          h3 {
+            font-size: 2rem;
+          }
+          p {
+            font-size: 1.6rem;
+          }
+        }
+        .icon {
+          width: 60px;
+        }
+      }
+    }
+  }
+}
+@include mobile {
+  .fullpage-slide {
+    &.mobile {
+      display: block;
+    }
+    &.pc {
+      display: none;
+    }
+    &.tech-slide1 {
+      .title1 {
+        padding: 14vh 0 0;
+      }
+      .box-wrap {
+        .box {
+          &:hover {
+            .icon {
+              background-image: url("../../public/images/tech-ic1.png");
+            }
+          }
+          .icon {
+            background-image: url("../../public/images/tech-ic1-gray.png");
+          }
+        }
+      }
+    }
+    &.tech-slide2 {
+      .box-wrap {
+        .box {
+          &:nth-child(1) {
+            &:hover {
+              .icon {
+                background-image: url("../../public/images/tech-ic2.png");
+              }
+            }
+            .icon {
+              background-image: url("../../public/images/tech-ic2-gray.png");
+            }
+          }
+          &:nth-child(2) {
+            &:hover {
+              .icon {
+                background-image: url("../../public/images/tech-ic3.png");
+              }
+            }
+            .icon {
+              background-image: url("../../public/images/tech-ic3-gray.png");
+            }
+          }
+          &:nth-child(3) {
+            &:hover {
+              .icon {
+                background-image: url("../../public/images/tech-ic4.png");
+              }
+            }
+            .icon {
+              background-image: url("../../public/images/tech-ic4-gray.png");
+            }
+          }
+        }
+      }
+    }
+    &.tech-slide3 {
+      padding-top: 24vh;
+      background-image: url("../../public/images/technology-bg2.png");
+      .box-wrap {
+        .box {
+          &:nth-child(1) {
+            &:hover {
+              .icon {
+                background-image: url("../../public/images/tech-ic5.png");
+              }
+            }
+            .icon {
+              background-image: url("../../public/images/tech-ic5-gray.png");
+            }
+          }
+          &:nth-child(2) {
+            &:hover {
+              .icon {
+                background-image: url("../../public/images/tech-ic6.png");
+              }
+            }
+            .icon {
+              background-image: url("../../public/images/tech-ic6-gray.png");
+            }
+          }
+        }
+      }
+    }
+    &.tech-slide4 {
+      padding-top: 24vh;
+      background-image: url("../../public/images/technology-bg2.png");
+      .box-wrap {
+        margin-bottom: 8vh;
+        .box {
+          &:nth-child(1) {
+            &:hover {
+              .icon {
+                background-image: url("../../public/images/tech-ic7.png");
+              }
+            }
+            .icon {
+              background-image: url("../../public/images/tech-ic7-gray.png");
+            }
+          }
+          &:nth-child(2) {
+            &:hover {
+              .icon {
+                background-image: url("../../public/images/tech-ic8.png");
+              }
+            }
+            .icon {
+              background-image: url("../../public/images/tech-ic8-gray.png");
+            }
+          }
+        }
+      }
+    }
+    .box-wrap {
+      grid-template-columns: 1fr;
+      .box {
+        &:nth-child(odd) {
+          margin-right: 0;
+        }
+        padding: 2rem;
+        .txt {
+          h3 {
+            font-size: 1.8rem;
+            padding-bottom: 0.8rem;
+          }
+          p {
+            font-size: 1.6rem;
+          }
+        }
+        .icon {
+          width: 60px;
+        }
+      }
+    }
+  }
+}
+@include mobile-sm {
+}
