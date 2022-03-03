@@ -1,70 +1,125 @@
 @import "./mixin";
 
 .fullpage-slide {
-  &.contact-slide1{
+  &.mobile {
+    display: none;
+  }
+  &.contact-slide1 {
     position: relative;
-    background-image: url('../../public/images/contact-bg.png');
-    padding-top:15vh;
-    .contact-box{
-      margin:0 auto;
-      padding:4rem;
-      width: 90vw;
-      background: rgba(255, 255, 255, 0.7);
-      border-radius: 4px;
-      .title1{
-        margin-bottom: .8rem;
-      }
-      
-      form{
-        margin-top:4rem;
-        display: flex;  
-        flex-wrap: wrap;  
-        .btn{
-          margin:0 auto;
-          display: block;
-          border:0;
-          padding:1.6rem 2.4rem;
-          border-radius: 4px;
-          font-weight: 600;
-          font-size: 1.8rem;
-          color:#fff;
-          background-color: $primary-color;
-        }
-        .inp-row{
-          display: flex;
-          width: 50%;
-          margin-bottom: 3.2rem;
-          label{
-            width: 160px;
-            padding:1.6rem 2rem; 
-            font-size: 1.8rem;
-            font-weight: bold;
-            .required{
-              color:red;
-              padding-left: 4px;
-            }
-          }
-          input,textarea{
-            width: calc(100% - 160px);
-            border:1px solid #ddd;
-            border-radius: 4px;
-            padding:1.6rem; 
-          }
-          &.txtbox{
-            width: 100%;
-          }
-         
-        }
-      }
-      
+    background-image: url("../../public/images/contact-bg.png");
+    padding-top: 15vh;
+  }
+  .contact-box {
+    margin: 0 auto;
+    padding: 4rem;
+    width: 90vw;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+    .title1 {
+      margin-bottom: 0.8rem;
+    }
 
+    form {
+      margin-top: 4rem;
+      display: flex;
+      flex-wrap: wrap;
+      .btn {
+        margin: 0 auto;
+        display: block;
+        border: 0;
+        padding: 1.6rem 2.4rem;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 1.8rem;
+        color: #fff;
+        background-color: $primary-color;
+      }
+      .inp-row {
+        display: flex;
+        width: 50%;
+        margin-bottom: 3.2rem;
+        label {
+          width: 160px;
+          padding: 1.6rem 2rem;
+          font-size: 1.8rem;
+          font-weight: bold;
+          .required {
+            color: red;
+            padding-left: 4px;
+          }
+        }
+        input,
+        textarea {
+          width: calc(100% - 160px);
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          padding: 1.6rem;
+        }
+        &.txtbox {
+          width: 100%;
+        }
+      }
     }
   }
 }
 
 @include tablet {
+  .fullpage-slide {
+    .contact-box {
+      padding: 2.4rem;
+      form {
+        .inp-row {
+          label {
+            width: 110px;
+            padding: 1.6rem;
+          }
+          input,
+          textarea {
+            width: calc(100% - 110px);
+          }
+        }
+      }
+    }
+  }
 }
 @include mobile {
+  .fullpage-slide {
+    .contact-box {
+      form {
+        flex-direction: column;
+        .inp-row {
+          width: 100%;
+          &:nth-child(5),
+          &:nth-child(6) {
+            display: none;
+          }
+        }
+        .btn {
+          display: none;
+        }
+      }
+    }
+    &.mobile {
+      display: block;
+    }
+    &.contact-slide1 {
+      .footer {
+        display: none;
+      }
+    }
+    &.contact-slide2 {
+      padding-top: 14vh;
+      position: relative;
+      background-image: url("../../public/images/contact-bg.png");
+      .contact-box {
+        form {
+          .btn {
+            display: block;
+          }
+        }
+      }
+    }
+  }
 }
 @include mobile-sm {
 }

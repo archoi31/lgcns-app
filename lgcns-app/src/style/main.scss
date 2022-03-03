@@ -382,19 +382,39 @@
       .info-wrap {
         .info-icon {
           .circle {
+            background: none;
+            position: static;
+            padding: 0.8rem;
             .icon {
-              width: 28vw;
-              height: 28vw;
+              height: auto;
+              overflow: hidden;
+              width: 90vw;
               &::before {
-                width: 10vw;
-                height: 10vw;
-                background-size: 100%;
+                float: left;
+                width: 16vw;
+                height: 16vw;
+                background-size: 70%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-color: #ffffff1a;
+                border-radius: 50%;
+                margin-right: 2rem;
+                vertical-align: middle;
               }
               p {
-                font-size: 1.4rem;
+                font-size: 1.6rem;
+                text-align: left;
               }
             }
           }
+        }
+      }
+    }
+    &.main-slide3 {
+      .asw-wrap {
+        .asw-img {
+          background-image: url("../../public/images/main-aws-m.svg");
+          width: 90vw;
         }
       }
     }
@@ -404,9 +424,22 @@
           padding: 0.4rem 1.6rem;
         }
       }
+      .slick-slider {
+        .slick-slide {
+          > div {
+            .txt-con {
+              height: 12vh;
+              padding: 0.8rem 1.6rem;
+            }
+          }
+        }
+      }
       .contact {
         flex-direction: column;
         text-align: center;
+        p {
+          font-size: 1.6rem;
+        }
         button {
           margin-top: 1.6rem;
         }

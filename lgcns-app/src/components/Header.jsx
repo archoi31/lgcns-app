@@ -18,48 +18,60 @@ const Header = function () {
         header.classList.remove("fixed");
       }
     };
+    //모바일메뉴오픈
+    document.querySelector(".menu-open").addEventListener("click", () => {
+      console.log(document.querySelector(".m-open-menu"));
+      document.querySelector(".m-open-menu").classList.add("show");
+    });
+    //모바일메뉴닫기
+    document.querySelector(".menu-close").addEventListener("click", () => {
+      console.log(document.querySelector(".menu-close"));
+      document.querySelector(".m-open-menu").classList.remove("show");
+    });
   };
   return (
     <>
       <div className="m-open-menu">
-        <div className="top">
-          <div className="logo">
-            <Link to="/">
-              <img src={logo} />
-            </Link>
+        <div className="container">
+          <div className="top">
+            <div className="logo">
+              <Link to="/">
+                <img src={logo} />
+              </Link>
+            </div>
+            <button className="menu-close">
+              <img src={require("../assets/ic_menu_close.png")} />
+            </button>
           </div>
-          <button className="menu-close">
-            <img src={require("../assets/ic_menu_close.png")} />
-          </button>
-        </div>
 
-        <ul>
-          <li>
-            <Link to="/about">
-              <span>About</span>
-            </Link>
-          </li>
-          <li>
-            <Link to="/business">
-              <span>Business</span>
-            </Link>
-          </li>
-          <li>
-            <Link to="/technology">
-              <span>Technology</span>
-            </Link>
-          </li>
-          <li>
-            <Link to="/casestudy">
-              <span>Case Study</span>
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact">
-              <span>Contact Us</span>
-            </Link>
-          </li>
-        </ul>
+          <ul>
+            <li>
+              <Link to="/about">
+                <span>About</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/business">
+                <span>Business</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/technology">
+                <span>Technology</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/casestudy">
+                <span>Case Study</span>
+              </Link>
+            </li>
+            <li className="contact">
+              <Link to="/contact">
+                <button>Contact Us</button>
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
       <section className="m-header">
         <div className="logo">

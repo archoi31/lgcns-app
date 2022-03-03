@@ -1,6 +1,9 @@
 @import "./mixin";
 
 .fullpage-slide {
+  &.mobile {
+    display: none;
+  }
   &.business-slide1 {
     padding: 0 5vw;
     .title1 {
@@ -83,7 +86,8 @@
   &.business-slide2 {
     position: relative;
     .tab {
-      margin: 14vh auto 0;
+      padding-top: 14vh;
+      margin: 0 auto;
       display: flex;
       width: 90vw;
       li {
@@ -112,113 +116,108 @@
         }
       }
     }
-    .tab-content {
-      margin: 0 auto 4vh;
-      padding: 4.8rem;
-      display: none;
-      width: 90vw;
-      background-color: #f4f4f4;
-      min-height: 54vh;
-      &.show {
-        display: block;
-      }
-      .title1 {
-        margin-bottom: 1rem;
-      }
-      .service-wrap {
-        margin-top: 5vh;
-        align-items: center;
-        min-height: 25vh;
-        overflow: hidden;
-        .service {
-          display: flex;
-          float: left;
-          margin-right: 4vw;
-          .icon {
-            width: 80px;
-            height: 80px;
-            background-color: $primary-color;
-            background-repeat: no-repeat;
-            border-radius: 50%;
-            background-position: center;
+  }
+  .tab-content {
+    margin: 0 auto;
+    padding: 4.8rem;
+    display: none;
+    width: 90vw;
+    background-color: #f4f4f4;
+    min-height: 54vh;
+    &.show {
+      display: block;
+    }
+    .title1 {
+      margin-bottom: 1rem;
+    }
+    .service-wrap {
+      margin-top: 5vh;
+      align-items: center;
+      min-height: 25vh;
+      overflow: hidden;
+      .service {
+        display: flex;
+        flex-wrap: wrap;
+        float: left;
+        margin-right: 4vw;
+        .icon {
+          width: 80px;
+          height: 80px;
+          background-color: $primary-color;
+          background-repeat: no-repeat;
+          border-radius: 50%;
+          background-position: center;
+          &.icon1 {
+            background-image: url("../../public/images/business-activities.png");
           }
-          &:nth-child(1) {
-            .icon {
-              background-image: url("../../public/images/business-activities.png");
-            }
+          &.icon2 {
+            background-image: url("../../public/images/business-participants.png");
           }
-          &:nth-child(2) {
-            .icon {
-              background-image: url("../../public/images/business-participants.png");
-            }
+          &.icon3 {
+            background-image: url("../../public/images/business-outputs.png");
           }
-          &:nth-child(3) {
-            margin-right: 0;
-            .icon {
-              background-image: url("../../public/images/business-outputs.png");
-            }
-          }
-          .txt {
-            padding-left: 1.6rem;
-            max-width: 25vw;
-            .txt-memo {
-              text-decoration: underline;
-              font-weight: bold;
-              position: relative;
-              color: $primary-color;
-              cursor: pointer;
-              .pop-memo {
-                display: none;
-                background-color: #fff;
-                position: absolute;
-                color: #666666;
-                font-size: 1.6rem;
-                width: 240px;
-                padding: 1.4rem;
-                left: 0%;
-                line-height: 120%;
-                z-index: 3;
-                font-weight: 400;
-                box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.15);
-                border-radius: 4px;
-                &.memo1 {
-                  top: 110%;
-                }
-                &.memo2 {
-                  top: 110%;
-                }
-                &.memo3 {
-                  bottom: 110%;
-                }
-                h4 {
-                  font-weight: bold;
-                  color: #111;
-                  padding-bottom: 0.8rem;
-                }
-                &.show {
-                  display: block;
-                }
+        }
+
+        .txt {
+          padding-left: 1.6rem;
+          max-width: 25vw;
+          .txt-memo {
+            text-decoration: underline;
+            font-weight: bold;
+            position: relative;
+            color: $primary-color;
+            cursor: pointer;
+            .pop-memo {
+              display: none;
+              background-color: #fff;
+              position: absolute;
+              color: #666666;
+              font-size: 1.6rem;
+              width: 240px;
+              padding: 1.4rem;
+              left: 0%;
+              line-height: 120%;
+              z-index: 3;
+              font-weight: 400;
+              box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.15);
+              border-radius: 4px;
+              &.memo1 {
+                top: 110%;
+              }
+              &.memo2 {
+                top: 110%;
+              }
+              &.memo3 {
+                bottom: 110%;
+              }
+              h4 {
+                font-weight: bold;
+                color: #111;
+                padding-bottom: 0.8rem;
+              }
+              &.show {
+                display: block;
               }
             }
-            h2 {
-              font-size: 2.4rem;
-              color: $primary-color;
-              font-weight: bold;
-              padding: 0.8rem 0 1.6rem;
-            }
-            h3 {
-              font-size: 1.8rem;
-              font-weight: bold;
-              padding-bottom: 0.8rem;
-              line-height: 140%;
-            }
-            p {
-              font-size: 1.6rem;
-              line-height: 130%;
-              padding-bottom: 1.6rem;
-              color: #666666;
-              line-height: 140%;
-            }
+          }
+          h2 {
+            font-size: 2.4rem;
+            color: $primary-color;
+            font-weight: bold;
+            padding: 0.8rem 0 1.6rem;
+          }
+          h3 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            padding-bottom: 0.8rem;
+            line-height: 140%;
+          }
+          p {
+            font-size: 1.6rem;
+            line-height: 130%;
+            padding-bottom: 1.6rem;
+            color: #666666;
+            line-height: 140%;
           }
         }
       }
@@ -227,12 +226,10 @@
 }
 @include desktop-md {
   .fullpage-slide {
-    &.business-slide2 {
-      .tab-content {
-        .service-wrap {
-          .service:nth-child(2) {
-            margin-bottom: 2.4rem;
-          }
+    .tab-content {
+      .service-wrap {
+        .service:nth-child(2) {
+          margin-bottom: 2.4rem;
         }
       }
     }
@@ -248,14 +245,12 @@
         padding-bottom: 2vh;
       }
     }
-    &.business-slide2 {
-      .tab-content {
-        padding: 2.4rem;
-        .service-wrap {
-          .service {
-            .txt {
-              max-width: 32vw;
-            }
+    .tab-content {
+      padding: 2.4rem;
+      .service-wrap {
+        .service {
+          .txt {
+            max-width: 32vw;
           }
         }
       }
@@ -264,36 +259,33 @@
 }
 @include tablet {
   .fullpage-slide {
-    &.business-slide2 {
-      .tab {
-        li {
-          padding: 1rem;
-          p {
-            display: none;
-          }
+    .tab {
+      li {
+        padding: 1rem;
+        p {
+          display: none;
         }
-        margin-top: 12vh;
       }
-      .tab-content {
-        padding: 2.4rem;
-        .service-wrap {
-          .service {
-            width: 100%;
-            &:nth-child(1) {
-              margin-bottom: 2.4rem;
+    }
+    .tab-content {
+      padding: 2.4rem;
+      .service-wrap {
+        .service {
+          width: 100%;
+          &:nth-child(1) {
+            margin-bottom: 2.4rem;
+          }
+          .txt {
+            max-width: 60vw;
+            h2 {
+              font-size: 1.8rem;
+              padding: 1.6rem 0 0.8rem;
             }
-            .txt {
-              max-width: 60vw;
-              h2 {
-                font-size: 1.8rem;
-                padding: 1.6rem 0 0.8rem;
-              }
-              h3 {
-                font-size: 1.6rem;
-              }
-              p {
-                font-size: 1.4rem;
-              }
+            h3 {
+              font-size: 1.6rem;
+            }
+            p {
+              font-size: 1.4rem;
             }
           }
         }
@@ -303,49 +295,88 @@
 }
 @include mobile {
   .fullpage-slide {
-    &.business-slide2 {
-      .tab-content {
-        .service-wrap {
-          .service {
-            .txt {
-              .pop-memo {
-                &.memo1 {
-                  left: -120px;
-                }
-                &.memo2 {
-                  left: -100px;
-                }
-                &.memo3 {
-                  left: -100px;
-                }
+    &.mobile {
+      display: block;
+    }
+    .tab-content {
+      padding: 2rem;
+      .service-wrap {
+        .service {
+          flex-direction: column;
+          .icon {
+            width: 70px;
+            height: 70px;
+            background-size: 70%;
+          }
+          .txt {
+            max-width: 80vw !important;
+            padding-left: 0;
+            .pop-memo {
+              &.memo1 {
+                left: -120px;
+              }
+              &.memo2 {
+                left: -100px;
+              }
+              &.memo4 {
+                left: -100px;
               }
             }
           }
         }
       }
     }
+    &.business-slide2 {
+      .footer {
+        display: none;
+      }
+      .tab-content {
+        &.tct1,
+        &.tct2 {
+          .service {
+            &:nth-child(2) {
+              display: none;
+            }
+            &:nth-child(3) {
+              display: none;
+            }
+          }
+        }
+        &.tct3,
+        &.tct4,
+        &.tct5 {
+          .service {
+            &:nth-child(3) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    &.business-slide3 {
+      padding-top: 14vh;
+      position: relative;
+    }
   }
 }
 @include mobile-sm {
   .fullpage-slide {
-    &.business-slide2 {
-      .tab-content {
-        .service-wrap {
-          .service {
-            flex-direction: column;
-            .txt {
-              max-width: 100%;
-              padding-left: 0rem;
-              .pop-memo {
-                &.memo1 {
-                  left: -120px;
-                }
-                &.memo2 {
-                  left: -200px;
-                }
-                &.memo3 {
-                  left: -220px;
-                }
+    .tab-content {
+      .service-wrap {
+        .service {
+          flex-direction: column;
+          .txt {
+            max-width: 100%;
+            padding-left: 0rem;
+            .pop-memo {
+              &.memo1 {
+                left: -120px;
+              }
+              &.memo2 {
+                left: -200px;
+              }
+              &.memo4 {
+                left: -220px;
               }
             }
           }

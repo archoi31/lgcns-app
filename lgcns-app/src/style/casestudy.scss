@@ -1,102 +1,167 @@
 @import "./mixin";
 
 .fullpage-slide {
-  &.case-slide1{
-    .h-wrap{
+  &.mobile {
+    display: none;
+  }
+  &.case-slide1 {
+    .v-wrap {
+      padding-top: 0;
+    }
+    .h-wrap {
       width: 80vw;
-      margin:12vh auto 4vh;
+      margin: 0 auto;
+      padding-top: 16vh;
+      padding-bottom: 4vh;
       display: flex;
-      .image{
-        width: 40%;
-        img{
+      .image {
+        width: 35%;
+        img {
           width: 100%;
         }
       }
-      .text{
-        width: 60%;
-        padding-left: 4rem;;
-        span{
+      .text {
+        width: 65%;
+        padding-left: 4rem;
+        span {
           font-size: 2.4rem;
           font-weight: bold;
           background-color: $primary-color;
-          color:#fff;
-          padding:1rem 2rem;
+          color: #fff;
+          padding: 1rem 2rem;
           display: inline-block;
-          margin: 4vh 0 2vh;
+          margin: 0 0 2vh;
         }
       }
     }
   }
-  &.case-slide2{
+  &.case-slide2 {
     position: relative;
   }
-  .v-wrap{
+  .v-wrap {
+    padding-top: 14vh;
     width: 80vw;
     display: grid;
-    grid-template-columns:repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 4rem;
-    margin:0 auto;
-    .v-box{
-      .image{
+    margin: 0 auto;
+    .v-box {
+      .image {
         position: relative;
-        span{
+        span {
           position: absolute;
-          top:0;
-          right:0;
+          top: 0;
+          right: 0;
           font-size: 1.8rem;
           font-weight: bold;
           background-color: $primary-color;
-          color:#fff;
-          padding:1rem 2rem;
+          color: #fff;
+          padding: 1rem 2rem;
           display: inline-block;
-  
         }
-        img{
+        img {
           width: 100%;
         }
       }
-      .text{
-        padding:1.6rem;
+      .text {
+        padding: 1.6rem;
         background-color: #f4f4f4;
-        height:17vh;
-        h2{
+        height: 17vh;
+        overflow: hidden;
+        overflow-y: auto;
+        h2 {
           font-size: 2rem;
           font-weight: bold;
         }
-        p{
+        p {
           font-size: 1.6rem;
-          color:#666;
-          margin-top:1.6rem;
+          color: #666;
+          margin-top: 1.6rem;
           line-height: 140%;
         }
       }
     }
   }
-  
-  .more-btn{
+
+  .more-btn {
     display: block;
-    border:1px solid #ddd;
+    border: 1px solid #ddd;
     border-radius: 4px;
-    padding:1rem 2rem;
+    padding: 1rem 2rem;
     font-size: 1.6rem;
-    color:#888;
+    color: #888;
     background-color: #fff;
-    margin:4vh auto;
-    &::after{
+    margin: 4vh auto;
+    &::after {
       content: "";
       width: 24px;
       height: 24px;
       display: inline-block;
       vertical-align: middle;
       margin-left: 8px;
-      background-image: url('../../public/images/ic_more_down.svg');
+      background-image: url("../../public/images/ic_more_down.svg");
     }
   }
 }
 
+@include desktop-md {
+  .fullpage-slide {
+    .h-wrap {
+      width: 90vw;
+    }
+    .v-wrap {
+      width: 90vw;
+    }
+  }
+}
+@include desktop-sm {
+}
 @include tablet {
 }
 @include mobile {
+  .fullpage-slide {
+    &.pc {
+      display: none;
+    }
+    &.mobile {
+      display: block;
+      .h-wrap {
+        flex-direction: column;
+        .image {
+          width: 100%;
+        }
+        .text {
+          width: 100%;
+          padding-left: 0;
+          span {
+            margin: 2vh 0 2vh;
+            font-size: 1.6rem;
+            font-weight: bold;
+            padding: 0.8rem 2rem;
+          }
+        }
+      }
+      .v-wrap {
+        padding-top: 12vh;
+        display: block;
+        .v-box {
+          margin-bottom: 2rem;
+          .text {
+            height: auto;
+            h2 {
+              font-size: 1.6rem;
+            }
+            p {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+    }
+    &.case-slide5 {
+      position: relative;
+    }
+  }
 }
 @include mobile-sm {
 }

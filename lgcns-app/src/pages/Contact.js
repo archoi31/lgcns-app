@@ -50,6 +50,25 @@ function Contact(props) {
       </div>
       <Footer/>
     </Slide>
+    <Slide className="fullpage-slide contact-slide2 mobile">
+      <div className="contact-box">
+        <form>
+          <div className="inp-row">
+              <label>직위<sapn className="required">*</sapn></label>
+              <input type="text" placeholder="직위를 입력하세요."/>
+              <span className="error-msg"></span>
+          </div>
+          <div className="inp-row txtbox">
+              <label>내용<sapn className="required">*</sapn></label>
+              <textarea rows="5" maxlength="1000" placeholder="내용을 입력하세요."></textarea>
+              <span className="error-msg"></span>
+          </div>
+          <button type="submit" className="btn">이메일 문의하기</button>
+        </form>
+
+      </div>
+      <Footer/>
+    </Slide>
   </FullPage>
     );
 }

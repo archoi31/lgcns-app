@@ -114,7 +114,7 @@ function Business(props) {
         </div>
         <div className="service-wrap">
           <div className="service">
-            <div className="icon"></div>
+            <div className="icon icon1"></div>
             <div className="txt">
               <h2>Activities</h2>
               <h3>Business Analysis</h3>
@@ -124,14 +124,14 @@ function Business(props) {
             </div>
           </div>
           <div className="service">
-            <div className="icon"></div>
+            <div className="icon icon2"></div>
             <div className="txt">
               <h2>Participants</h2>
               <h3>고객, Consultant, Facilitator</h3>
             </div>
           </div>
           <div className="service">
-            <div className="icon"></div>
+            <div className="icon icon3"></div>
             <div className="txt">
               <h2>Outputs</h2>
               <h3>DX Business Direction</h3>
@@ -147,7 +147,7 @@ function Business(props) {
         </div>
         <div className="service-wrap">
           <div className="service">
-            <div className="icon"></div>
+            <div className="icon icon1"></div>
             <div className="txt">
               <h2>Activities</h2>
               <h3>Service Modeling</h3>
@@ -157,14 +157,14 @@ function Business(props) {
             </div>
           </div>
           <div className="service">
-            <div className="icon"></div>
+            <div className="icon icon2"></div>
             <div className="txt">
               <h2>Participants</h2>
               <h3>고객, Innovation Studio Delivery Team (Facilitator, Subject Matter Expert)</h3>
             </div>
           </div>
           <div className="service">
-            <div className="icon"></div>
+            <div className="icon icon3"></div>
             <div className="txt">
               <h2>Outputs</h2>
               <h3>Prototype, Service Scenario</h3>
@@ -180,7 +180,7 @@ function Business(props) {
         </div>
         <div className="service-wrap">
           <div className="service">
-            <div className="icon"></div>
+            <div className="icon icon1"></div>
             <div className="txt">
               <h2>Activities</h2>
               <h3>고객과 함께 
@@ -196,14 +196,14 @@ function Business(props) {
             </div>
           </div>
           <div className="service">
-            <div className="icon"></div>
+            <div className="icon icon2"></div>
             <div className="txt">
               <h2>Participants</h2>
               <h3>고객, Launch Center Delivery Team</h3>
             </div>
           </div>
           <div className="service">
-            <div className="icon"></div>
+            <div className="icon icon3"></div>
             <div className="txt">
               <h2>Outputs</h2>
               <h3>비즈니스 애플리케이션<span className="txt-memo" onClick={()=>{ document.querySelector('.memo3').classList.toggle('show')}}>
@@ -222,21 +222,21 @@ function Business(props) {
         </div>
         <div className="service-wrap">
           <div className="service">
-            <div className="icon"></div>
+            <div className="icon icon1"></div>
             <div className="txt">
               <h2>Activities</h2>
               <h3>지속적인 Product 기능 개발 플랫폼 확장 및 최적화 모니터링과 alerting</h3>
             </div>
           </div>
           <div className="service">
-            <div className="icon"></div>
+            <div className="icon icon2"></div>
             <div className="txt">
               <h2>Participants</h2>
               <h3>고객, Product 전담 팀</h3>
             </div>
           </div>
           <div className="service">
-            <div className="icon"></div>
+            <div className="icon icon3"></div>
             <div className="txt">
               <h2>Outputs</h2>
               <h3>완성도 높은 애플리케이션</h3>
@@ -252,21 +252,21 @@ function Business(props) {
         </div>
         <div className="service-wrap">
           <div className="service">
-            <div className="icon"></div>
+            <div className="icon icon1"></div>
             <div className="txt">
               <h2>Activities</h2>
               <h3>Product의 유지 관리 IT 조직 및 직무 재설계 지원</h3>
             </div>
           </div>
           <div className="service">
-            <div className="icon"></div>
+            <div className="icon icon2"></div>
             <div className="txt">
               <h2>Participants</h2>
               <h3>고객, 변화 관리 전담 팀</h3>
             </div>
           </div>
           <div className="service">
-            <div className="icon"></div>
+            <div className="icon icon3"></div>
             <div className="txt">
               <h2>Outputs</h2>
               <h3>Product 맞춤형 변화 관리 방안을 통한 조직 역량 확대</h3>
@@ -274,7 +274,95 @@ function Business(props) {
           </div>
         </div>
       </div>
-    <Footer />
+      <Footer />
+    </Slide>
+    <Slide className="fullpage-slide business-slide3 mobile">
+    <div className="tab-content tct1 show">
+        
+        <div className="service-wrap">
+          <div className="service">
+            <div className="icon icon2"></div>
+            <div className="txt">
+              <h2>Participants</h2>
+              <h3>고객, Consultant, Facilitator</h3>
+            </div>
+          </div>
+          <div className="service">
+            <div className="icon icon3"></div>
+            <div className="txt">
+              <h2>Outputs</h2>
+              <h3>DX Business Direction</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="tab-content tct2">
+        
+        <div className="service-wrap">
+      
+          <div className="service">
+            <div className="icon icon2"></div>
+            <div className="txt">
+              <h2>Participants</h2>
+              <h3>고객, Innovation Studio Delivery Team (Facilitator, Subject Matter Expert)</h3>
+            </div>
+          </div>
+          <div className="service">
+            <div className="icon icon3"></div>
+            <div className="txt">
+              <h2>Outputs</h2>
+              <h3>Prototype, Service Scenario</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div className="tab-content tct3">
+    
+        <div className="service-wrap">
+          
+          <div className="service">
+            <div className="icon icon3"></div>
+            <div className="txt">
+              <h2>Outputs</h2>
+              <h3>비즈니스 애플리케이션<span className="txt-memo" onClick={()=>{ document.querySelector('.memo4').classList.toggle('show')}}>
+                MVP
+                <div className="pop-memo memo4"><h4>Minimum Viable Product</h4>고객에게 가치를 제공할 수 있는 최소한 기능을 구현한 제품</div>
+                </span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div className="tab-content tct4">
+       
+        <div className="service-wrap">
+        
+          <div className="service">
+            <div className="icon icon3"></div>
+            <div className="txt">
+              <h2>Outputs</h2>
+              <h3>완성도 높은 애플리케이션</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div className="tab-content tct5">
+      
+        <div className="service-wrap">
+          
+          <div className="service">
+            <div className="icon icon3"></div>
+            <div className="txt">
+              <h2>Outputs</h2>
+              <h3>Product 맞춤형 변화 관리 방안을 통한 조직 역량 확대</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Footer />
     </Slide>
   </FullPage>
     );

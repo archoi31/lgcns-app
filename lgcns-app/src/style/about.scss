@@ -1,6 +1,9 @@
 @import "./mixin";
 
 .fullpage-slide {
+  &.mobile {
+    display: none;
+  }
   &.about-slide1 {
     padding: 0;
     .title1 {
@@ -21,7 +24,7 @@
       background: #ffffffb2;
       margin-top: 4vh;
       width: 100%;
-      height: 53vh;
+      height: 70vh;
       text-align: center;
       .aws-img {
         position: relative;
@@ -107,16 +110,12 @@
     }
   }
 }
-@include desktop-md {
-}
-@include desktop-sm {
-}
 @include tablet {
   .fullpage-slide {
     &.about-slide1 {
       .aws-wrap {
         .aws-img {
-          width: 90%;
+          width: 70%;
           background-position-y: 20%;
           .aws-list {
             font-size: 1.4rem;
@@ -129,13 +128,16 @@
       }
     }
     &.about-slide2 {
+      .title1 {
+        width: 90vw;
+      }
       .about-wrap {
         flex-direction: column;
         .box {
           margin-right: 0px;
           margin-bottom: 1.6rem;
           flex: 1;
-          padding: 1.6rem;
+          padding: 2rem;
 
           h2 {
             font-size: 2rem;
@@ -157,8 +159,25 @@
 }
 @include mobile {
   .fullpage-slide {
+    &.mobile {
+      display: block;
+    }
     &.about-slide1 {
-      .title2 {
+      .aws-wrap {
+        .aws-img {
+          background-image: url("../../public/images/about-aws-m.svg");
+          width: 360px;
+          .aws-list {
+            &:first-child {
+              bottom: -4vh;
+              left: -10px;
+            }
+            &:last-child {
+              bottom: -4vh;
+              right: -10px;
+            }
+          }
+        }
       }
       .title1,
       .txt-con {
@@ -166,8 +185,38 @@
       }
     }
     &.about-slide2 {
+      .footer {
+        display: none;
+      }
+      .about-box2 {
+        display: none;
+      }
       .txt-con {
         width: 90%;
+      }
+    }
+    &.about-slide3 {
+      position: relative;
+      .about-box2 {
+        width: 90vw;
+        padding-top: 20vh;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@include mobile-sm {
+  .fullpage-slide {
+    &.about-slide1 {
+      .aws-wrap {
+        .aws-img {
+          max-width: 80vw;
+          .aws-list {
+            font-size: 1.2rem;
+          }
+        }
       }
     }
   }
