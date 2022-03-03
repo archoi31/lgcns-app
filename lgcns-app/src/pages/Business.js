@@ -21,8 +21,13 @@ function Business(props) {
       el.addEventListener('click', function () {
         console.log(el);
           removeClass();
+          console.log(index);
           tabList[index].classList.add("active");
-          tabCont[index].classList.add("show");
+         
+          document.querySelectorAll(`.tct${(index+1)}`).forEach(function(e,i){
+            e .classList.add("show");
+          })
+          
       })
     })
   }
@@ -102,7 +107,7 @@ function Business(props) {
           <p>조직 변화 관리 Service</p>
         </li>
       </ul>
-      <div className="tab-content show">
+      <div className="tab-content tct1 show">
         <div className="tit-wrap">
           <h1  className="title1">DX Consulting Service</h1>
           <p className="txt-con">DX 여정을 어디로, 어떻게  가야 할지 두려운 고객을 위해, Business Valuable Journey가 될 수 있도록 고객의 Pain을 진단합니다.</p>
@@ -135,7 +140,7 @@ function Business(props) {
         </div>
       </div>
 
-      <div className="tab-content">
+      <div className="tab-content tct2">
         <div className="tit-wrap">
           <h1  className="title1">비즈니스 솔루션 Prototyping/기획 Service</h1>
           <p className="txt-con">Service Modeling과 Digital Prototyping을 통해 비즈니스 솔루션을 상상하고, 설계하고, 빠르게 검증합니다.</p>
@@ -168,7 +173,7 @@ function Business(props) {
         </div>
       </div>
       
-      <div className="tab-content">
+      <div className="tab-content tct3">
       <div className="tit-wrap">
           <h1  className="title1">비즈니스 애플리케이션 개발 Service</h1>
           <p className="txt-con">클라우드 환경에 적합한 비즈니스 애플리케이션을Agile하게 만듭니다.</p>
@@ -210,7 +215,7 @@ function Business(props) {
         </div>
       </div>
       
-      <div className="tab-content">
+      <div className="tab-content tct4">
         <div className="tit-wrap">
           <h1  className="title1">비즈니스 솔루션 Prototyping/기획 Service</h1>
           <p className="txt-con">Service Modeling과 Digital Prototyping을 통해 비즈니스 솔루션을 상상하고, 설계하고, 빠르게 검증합니다.</p>
@@ -240,7 +245,7 @@ function Business(props) {
         </div>
       </div>
       
-      <div className="tab-content">
+      <div className="tab-content tct5">
       <div className="tit-wrap">
           <h1  className="title1">조직 변화 관리 Service</h1>
           <p className="txt-con">고객이 자체적 AM 역량을 확보 할 수 있도록 조직 변화 관리 방안을 지원합니다.</p>
