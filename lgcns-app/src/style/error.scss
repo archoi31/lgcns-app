@@ -1,0 +1,25 @@
+@import "./mixin";
+
+.fullpage-slide {
+  
+  &.error-slide {
+    text-align: center;
+    padding-top:25vh;
+    .title2{
+      padding-bottom: 4vh;
+    }
+    .txt-con,
+    .title2{
+      line-height: 150%;
+      width: 90vw;
+      margin:0 auto;
+    }
+    .icon{
+      background-image: url("../../public/images/ic_error.svg");   
+      width: 88px;
+      height: 88px;
+      margin:0 auto 2vh;
+    }
+  }
+  
+}

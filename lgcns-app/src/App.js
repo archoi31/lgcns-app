@@ -12,6 +12,8 @@ import Business from "./pages/Business";
 import Technology from "./pages/Technology";
 import CaseStudy from "./pages/CaseStudy";
 import Contact from "./pages/Contact";
+import Error from "./pages/ErrorPage";
+import Popup from "./pages/Popup";
 
 function App() {
   
@@ -28,6 +30,8 @@ function App() {
         <Route path="/technology" element={<Technology />} />
         <Route path="/casestudy" element={<CaseStudy />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/error" element={<Error />} />
+        <Route path="/popup" element={<Popup />} />
       </Routes>
     </BrowserRouter>
 
