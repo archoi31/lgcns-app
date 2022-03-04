@@ -16,28 +16,38 @@ function Contact(props) {
         <form>
           <div className="inp-row">
               <label>이름<span className="required">*</span></label>
-              <input type="text" placeholder="이름을 입력하세요."/>
-              <span className="error-msg"></span>
+              <div className="inp">
+                <input type="text" placeholder="이름을 입력하세요."/>
+                <span className="error-msg">이름을 입력해주세요.</span>
+              </div>
           </div>
           <div className="inp-row">
               <label>이메일<span className="required">*</span></label>
-              <input type="text" placeholder="이메일을 입력하세요."/>
-              <span className="error-msg"></span>
+              <div className="inp">
+                <input type="text" placeholder="이메일을 입력하세요."/>
+                <span className="error-msg"></span>
+                </div>
           </div>
           <div className="inp-row">
               <label>전화번호<span className="required">*</span></label>
-              <input type="text" placeholder="전화번호를 입력하세요."/>
-              <span className="error-msg"></span>
+              <div className="inp">
+                <input type="text" placeholder="전화번호를 입력하세요."/>
+                <span className="error-msg"></span>
+                </div>
           </div>
           <div className="inp-row">
               <label>회사명<span className="required">*</span></label>
-              <input type="text" placeholder="회사명을 입력하세요."/>
-              <span className="error-msg"></span>
+              <div className="inp">
+                <input type="text" placeholder="회사명을 입력하세요."/>
+                <span className="error-msg"></span>
+                </div>
           </div>
           <div className="inp-row">
               <label>직위<span className="required">*</span></label>
-              <input type="text" placeholder="직위를 입력하세요."/>
-              <span className="error-msg"></span>
+              <div className="inp">
+                <input type="text" placeholder="직위를 입력하세요."/>
+                <span className="error-msg"></span>
+                </div>
           </div>
           <div className="inp-row txtbox">
               <label>내용<span className="required">*</span></label>
@@ -53,10 +63,12 @@ function Contact(props) {
     <Slide className="fullpage-slide contact-slide2 mobile">
       <div className="contact-box">
         <form>
-          <div className="inp-row">
+        <div className="inp-row">
               <label>직위<span className="required">*</span></label>
-              <input type="text" placeholder="직위를 입력하세요."/>
-              <span className="error-msg"></span>
+              <div className="inp">
+                <input type="text" placeholder="직위를 입력하세요."/>
+                <span className="error-msg"></span>
+                </div>
           </div>
           <div className="inp-row txtbox">
               <label>내용<span className="required">*</span></label>

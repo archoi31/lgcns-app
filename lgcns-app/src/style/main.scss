@@ -372,8 +372,12 @@
         margin-top: 20vh;
       }
       .title1,
+      .title2,
       .txt-con {
-        text-shadow: 4px 4px 5px rgba(255, 255, 255, 0.3);
+        text-shadow: 0px 0px 4px #ffffff;
+      }
+      .txt-con {
+        font-weight: bold;
       }
       background-image: url("../../public/images/m-main-bg-1.png");
     }
@@ -425,6 +429,7 @@
         }
       }
       .slick-slider {
+        width: 85vw;
         .slick-slide {
           > div {
             .txt-con {

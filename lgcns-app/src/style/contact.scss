@@ -48,15 +48,31 @@
             padding-left: 4px;
           }
         }
-        input,
-        textarea {
+        .inp {
           width: calc(100% - 160px);
-          border: 1px solid #ddd;
-          border-radius: 4px;
-          padding: 1.6rem;
+          position: relative;
+          input {
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 1.6rem;
+          }
+          .error-msg {
+            color: red;
+            font-size: 1.4rem;
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+          }
         }
         &.txtbox {
           width: 100%;
+          textarea {
+            width: calc(100% - 160px);
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 1.6rem;
+          }
         }
       }
     }
@@ -73,9 +89,13 @@
             width: 110px;
             padding: 1.6rem;
           }
-          input,
-          textarea {
+          .inp {
             width: calc(100% - 110px);
+          }
+          &.txtbox {
+            textarea {
+              width: calc(100% - 110px);
+            }
           }
         }
       }

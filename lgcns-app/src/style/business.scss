@@ -5,18 +5,20 @@
     display: none;
   }
   &.business-slide1 {
-    padding: 0 5vw;
     .title1 {
       text-align: left;
+      padding-left: 5%;
       width: 90vw;
       padding-top: 16vh;
     }
     .txt-con {
+      padding-left: 5%;
       text-align: left;
       width: 40vw;
       padding-bottom: 4vh;
     }
     .start-btn {
+      padding-left: 5%;
       border: 0;
       font-weight: bold;
       font-size: 2rem;
@@ -37,29 +39,32 @@
     .title2 {
       margin-top: 5vh;
     }
-    .slick-list {
+    .slick-slider {
+      margin-left: 5%;
+      width: 95%;
+      overflow: hidden;
+
       .slick-arrow {
         display: none;
       }
+    }
+    .slick-list {
+      margin: 0 -40px;
       .slick-track {
         background-image: url("../../public/images/business-ic-bg.svg");
         background-position: 0%;
+        background-size: 100%;
         background-repeat: no-repeat;
       }
       .slick-slide {
-        &:last-child {
-          > div {
-            margin-right: 0;
-          }
-        }
         > div {
-          background: #ffffff80;
-          border: 1px solid #fff;
           text-align: center;
-          margin-right: 4.8rem;
-          height: 320px;
+          padding: 0 40px;
           div {
+            background: #ffffff80;
+            border: 1px solid #fff;
             padding: 4rem 3.2rem;
+            height: 320px;
           }
           h3 {
             color: $primary-color;
@@ -298,6 +303,7 @@
     &.mobile {
       display: block;
     }
+
     .tab-content {
       padding: 2rem;
       .service-wrap {
@@ -327,6 +333,14 @@
       }
     }
     &.business-slide2 {
+      .tab {
+        li {
+          padding: 0.8rem;
+          svg {
+            width: 40px;
+          }
+        }
+      }
       .footer {
         display: none;
       }
