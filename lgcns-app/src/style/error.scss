@@ -4,7 +4,7 @@
   
   &.error-slide {
     text-align: center;
-    padding-top:25vh;
+    padding-top:22vh;
     .title2{
       padding-bottom: 4vh;
     }
@@ -19,6 +19,23 @@
       width: 88px;
       height: 88px;
       margin:0 auto 2vh;
+    }
+    button{
+      margin-top:4rem;
+      @include button;
+      background-color: #111;
+      font-size: 1.8rem;
+      width: 180px;
+      color:#fff;
+      &::after{
+        content:"";
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top:-4px;
+        background-image: url("../../public/images/ic_go_white.svg");
+      }
     }
   }
   

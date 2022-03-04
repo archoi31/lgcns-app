@@ -13,6 +13,7 @@ function ErrorPage(props) {
       <p className="txt-con">존재하지 않는 페이지거나, 오류로 인하여 현재 페이지를 볼 수 없습니다.<br/>
       페이지의 주소가 변경 혹은 삭제 되었을 수 있으니, 입력하신 주소가 정확한지 확인하시고<br/>
       잠시 후 다시 시도해 주시기 바랍니다.</p>
+      <button>메인 페이지</button>
       <Footer/>
     </Slide>
   </FullPage>

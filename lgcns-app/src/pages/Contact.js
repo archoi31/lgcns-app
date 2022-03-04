@@ -15,33 +15,33 @@ function Contact(props) {
 
         <form>
           <div className="inp-row">
-              <label>이름<sapn className="required">*</sapn></label>
+              <label>이름<span className="required">*</span></label>
               <input type="text" placeholder="이름을 입력하세요."/>
               <span className="error-msg"></span>
           </div>
           <div className="inp-row">
-              <label>이메일<sapn className="required">*</sapn></label>
+              <label>이메일<span className="required">*</span></label>
               <input type="text" placeholder="이메일을 입력하세요."/>
               <span className="error-msg"></span>
           </div>
           <div className="inp-row">
-              <label>전화번호<sapn className="required">*</sapn></label>
+              <label>전화번호<span className="required">*</span></label>
               <input type="text" placeholder="전화번호를 입력하세요."/>
               <span className="error-msg"></span>
           </div>
           <div className="inp-row">
-              <label>회사명<sapn className="required">*</sapn></label>
+              <label>회사명<span className="required">*</span></label>
               <input type="text" placeholder="회사명을 입력하세요."/>
               <span className="error-msg"></span>
           </div>
           <div className="inp-row">
-              <label>직위<sapn className="required">*</sapn></label>
+              <label>직위<span className="required">*</span></label>
               <input type="text" placeholder="직위를 입력하세요."/>
               <span className="error-msg"></span>
           </div>
           <div className="inp-row txtbox">
-              <label>내용<sapn className="required">*</sapn></label>
-              <textarea rows="5" maxlength="1000" placeholder="내용을 입력하세요."></textarea>
+              <label>내용<span className="required">*</span></label>
+              <textarea rows="5" placeholder="내용을 입력하세요."></textarea>
               <span className="error-msg"></span>
           </div>
           <button type="submit" className="btn">이메일 문의하기</button>
@@ -54,18 +54,17 @@ function Contact(props) {
       <div className="contact-box">
         <form>
           <div className="inp-row">
-              <label>직위<sapn className="required">*</sapn></label>
+              <label>직위<span className="required">*</span></label>
               <input type="text" placeholder="직위를 입력하세요."/>
               <span className="error-msg"></span>
           </div>
           <div className="inp-row txtbox">
-              <label>내용<sapn className="required">*</sapn></label>
+              <label>내용<span className="required">*</span></label>
               <textarea rows="5" maxlength="1000" placeholder="내용을 입력하세요."></textarea>
               <span className="error-msg"></span>
           </div>
           <button type="submit" className="btn">이메일 문의하기</button>
         </form>
-
       </div>
       <Footer/>
     </Slide>
