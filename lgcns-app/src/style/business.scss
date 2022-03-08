@@ -139,7 +139,6 @@
       margin-top: 5vh;
       align-items: center;
       min-height: 25vh;
-      overflow: hidden;
       .service {
         display: flex;
         flex-wrap: wrap;
@@ -193,7 +192,7 @@
                 top: 110%;
               }
               &.memo3 {
-                top: 110%;
+                bottom: 110%;
                 left:-200px;
               }
               h4 {
