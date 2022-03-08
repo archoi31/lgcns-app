@@ -39,13 +39,14 @@
     position: relative;
   }
   .v-wrap {
-    padding-top: 14vh;
+    padding-top: 11vh;
     width: 80vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 4rem;
     margin: 0 auto;
     .v-box {
+      margin-bottom: 1.6rem;
       .image {
         position: relative;
         span {
@@ -64,19 +65,19 @@
         }
       }
       .text {
-        padding: 1.6rem;
+        padding: 1.2rem;
         background-color: #f4f4f4;
-        height: 17vh;
+        height: 130px;
         overflow: hidden;
         overflow-y: auto;
         h2 {
-          font-size: 2rem;
+          font-size: 1.8rem;
           font-weight: bold;
         }
         p {
-          font-size: 1.6rem;
+          font-size: 1.4rem;
           color: #666;
-          margin-top: 1.6rem;
+          margin-top: .8rem;
           line-height: 140%;
         }
       }
@@ -87,11 +88,12 @@
     display: block;
     border: 1px solid #ddd;
     border-radius: 4px;
-    padding: 1rem 2rem;
+    padding: .8rem 2rem;
     font-size: 1.6rem;
     color: #888;
     background-color: #fff;
-    margin: 4vh auto;
+    margin: 0 auto;
+    transition: all .3s;
     &::after {
       content: "";
       width: 24px;
@@ -100,6 +102,11 @@
       vertical-align: middle;
       margin-left: 8px;
       background-image: url("../../public/images/ic_more_down.svg");
+    }
+    &:hover{
+      background-color: #111;
+      color:#fff;
+      border-color: #111;
     }
   }
 }

@@ -193,7 +193,8 @@
                 top: 110%;
               }
               &.memo3 {
-                bottom: 110%;
+                top: 110%;
+                left:-200px;
               }
               h4 {
                 font-weight: bold;
@@ -236,6 +237,19 @@
         .service:nth-child(2) {
           margin-bottom: 2.4rem;
         }
+        .service {
+          .txt {
+            .txt-memo {
+              .pop-memo {
+                &.memo3 {
+                  bottom: 115%;
+                  top: -100px;
+                }
+              }
+            }
+          }
+            
+        }
       }
     }
   }
@@ -256,7 +270,16 @@
         .service {
           .txt {
             max-width: 32vw;
+            .txt-memo {
+              .pop-memo {
+                &.memo3 {
+                  bottom: 110%;
+                  top: -100px;
+                }
+              }
+            }
           }
+            
         }
       }
     }
@@ -319,13 +342,14 @@
             padding-left: 0;
             .pop-memo {
               &.memo1 {
-                left: -120px;
+                left: -0px;
               }
               &.memo2 {
-                left: -100px;
+                left: -180px;
               }
               &.memo4 {
                 left: -100px;
+                bottom:110%
               }
             }
           }
@@ -384,13 +408,13 @@
             padding-left: 0rem;
             .pop-memo {
               &.memo1 {
-                left: -120px;
+                left: -60px;
               }
               &.memo2 {
-                left: -200px;
+                left: -80px;
               }
               &.memo4 {
-                left: -220px;
+                left: -120px;
               }
             }
           }

@@ -22,7 +22,7 @@ const SlickSliderBusiness = ({ data, handleRen }) => {
     responsive: [
       // 반응형 웹 구현 옵션
       {
-        breakpoint: 1200, // 화면 사이즈 1200px
+        breakpoint: 1300, 
         settings: {
           slidesToShow: 3,
         },
