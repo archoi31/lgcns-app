@@ -193,7 +193,7 @@
               }
               &.memo3 {
                 bottom: 110%;
-                left:-200px;
+                left: -200px;
               }
               h4 {
                 font-weight: bold;
@@ -247,7 +247,6 @@
               }
             }
           }
-            
         }
       }
     }
@@ -278,7 +277,6 @@
               }
             }
           }
-            
         }
       }
     }
@@ -296,6 +294,7 @@
     }
     .tab-content {
       padding: 2.4rem;
+      height: 80vh;
       .service-wrap {
         .service {
           width: 100%;
@@ -348,7 +347,7 @@
               }
               &.memo4 {
                 left: -100px;
-                bottom:110%
+                bottom: 110%;
               }
             }
           }
@@ -391,8 +390,11 @@
       }
     }
     &.business-slide3 {
-      padding-top: 14vh;
+      padding-top: 0;
       position: relative;
+      .tab-content {
+        padding-top: 8vh;
+      }
     }
   }
 }

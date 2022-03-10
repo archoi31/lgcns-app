@@ -202,6 +202,30 @@ html {
       }
     }
     .footer {
+      .floatingTop {
+        display: block;
+        position: fixed;
+        width: 56px;
+        height: 56px;
+        margin: 0;
+        right: 2%;
+        bottom: 30px;
+        overflow: hidden;
+        z-index: 20;
+        a {
+          background: #fff url("../public/images/ico_arrow_up.png") no-repeat
+            center;
+          border: 1px solid #d8d8d8;
+          width: 54px;
+          height: 54px;
+          float: right;
+          z-index: 20;
+          span {
+            display: block;
+            text-indent: -99999px;
+          }
+        }
+      }
       width: 100%;
       border-top: 1px solid #dddddd;
       padding: 4vh 5vw;
@@ -252,6 +276,22 @@ html {
         flex-direction: column;
         text-align: center;
         font-size: 1.4rem;
+        .floatingTop {
+          position: fixed;
+          margin: 0;
+          right: 2%;
+          bottom: 5%;
+          overflow: hidden;
+          width: 12vw;
+          height: 12vw;
+          a {
+            background: #fff url("../public/images/ico_arrow_up_m.png")
+              no-repeat center;
+            background-size: 4vw auto;
+            width: 12vw;
+            height: 12vw;
+          }
+        }
         .logo {
           display: block;
           margin: 0 auto 0.8rem;
