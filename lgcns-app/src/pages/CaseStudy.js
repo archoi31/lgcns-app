@@ -2,6 +2,8 @@ import React from "react";
 import { FullPage, Slide } from 'react-full-page';
 import '../style/casestudy.scss';
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
+
 
 function CaseStudy(props) {
   return (
@@ -13,12 +15,13 @@ function CaseStudy(props) {
         </div>
         <div className="text">
           <span>H 금융사</span>
-          <h1 className="title1">소비 포인트 플랫폼</h1>
+          <h1 className="title1">소비 포인트 플랫폼<Link to="/csdetail1"><button className="go-detail-btn">본문 읽기<img src="images/ic_go_detail.png"></img></button></Link></h1>
           <p className="txt-con">
           개발 기간이 짧고 사전 기획/분석이 가능하지 않는 시스템을 스프린트로 진행하면서 데모를 확인하고 상세 설계하는 Agile 방식 적용
           다양한 사용자 채널을 확보하여 풍부한 소비활동 경험을 제공하며 Digital Currency 생태계를 확장할 수 있는 발판 확보
           </p>
         </div>
+        
       </div>
       <div className="v-wrap">
         <div className="v-box">

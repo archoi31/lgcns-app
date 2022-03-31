@@ -14,6 +14,7 @@ import CaseStudy from "./pages/CaseStudy";
 import Contact from "./pages/Contact";
 import Error from "./pages/ErrorPage";
 import Popup from "./pages/Popup";
+import CaseStudyDetail1 from "./pages/CaseStudyDetail1"
 
 function App() {
   
@@ -32,6 +33,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/error" element={<Error />} />
         <Route path="/popup" element={<Popup />} />
+        <Route path="/csdetail1" element={<CaseStudyDetail1 />} />
       </Routes>
     </BrowserRouter>
 

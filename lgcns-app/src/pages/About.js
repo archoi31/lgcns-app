@@ -58,7 +58,8 @@ function About(props) {
       </div>
       <div className="about-box2">
         <h1 className="title1">최고의 Application Modernization 구축 역량</h1>
-        <p className="txt-con">글로벌 최고 수준의 차별화된 <span className="color-primary">Cloud Native, Agile, DevOps, MSA 기술과 경험</span>을 보유하고 있으며, 
+        <p className="txt-con">
+        글로벌 최고 수준의 차별화된 <span className="color-primary">Cloud Native, Agile, DevOps, MSA 기술과 경험</span>을 보유하고 있으며, 
         각 기술들의 유기적인 통합 구현을 통해 
         최고의 <span className="color-primary">Business Agility와 System Quality</span>를 고객에게 제공합니다.
         </p>

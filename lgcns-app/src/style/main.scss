@@ -143,6 +143,13 @@
       align-items: flex-end;
       justify-content: space-between;
       p {
+        .aws-badge {
+          text-align: right;
+          margin-bottom: 2rem;
+          img {
+            width: 80px;
+          }
+        }
         margin-left: 20px;
         margin-bottom: 2.4rem;
       }
@@ -292,6 +299,9 @@
     }
     .txt-con {
       font-size: 1.8rem;
+    }
+    .aws-badge {
+      text-align: left !important;
     }
   }
 }

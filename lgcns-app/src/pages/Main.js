@@ -68,7 +68,16 @@ function Main(props) {
           AM시장을 선도하는 파트너입니다.
         </h1>
         
-        <p className="txt-con">고객이 원하는 것을 빠르게 캐치하여 서비스 반영하기 위해서, 
+        <p className="txt-con">
+          
+          <div className="aws-badge" >
+            <img src="images/aws_badge_1.png" />
+            <img src="images/aws_badge_2.png" />
+            <img src="images/aws_badge_3.png" />
+            <img src="images/aws_badge_4.png" />
+          </div>
+
+          고객이 원하는 것을 빠르게 캐치하여 서비스 반영하기 위해서, 
         기업은 “System , Process, 조직 역량” 세 가지 측면에서 반드시 변화해야 합니다.
         </p>
       </div>
