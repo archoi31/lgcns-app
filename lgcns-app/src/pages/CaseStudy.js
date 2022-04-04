@@ -26,11 +26,11 @@ function CaseStudy(props) {
       <div className="v-wrap">
         <div className="v-box">
           <div className="image">
-            <span>L 금융사</span>
+            <span>L 금융사 </span>
             <img src={require("../assets/case-thum-1.png")} />  
           </div>
           <div className="text">
-            <h2>방문 포털 시스템</h2>
+            <h2>방문 포털 시스템 <Link to="/csdetail2"><button className="go-detail-btn">본문 읽기<img src="images/ic_go_detail.png"></img></button></Link></h2>
             <p>MSA 적용을 통해 방문(Visit), 사업장(Workspace), 회원(Member) 등의 도메인 별 Micro Service 구축<br/>
             방문 포탈의 트랜잭션이 출근 전 집중 되므로 Serverless Architecture 적용하여 AWS API Gateway + Lambda 활용</p>
           </div>
@@ -41,7 +41,7 @@ function CaseStudy(props) {
             <img src={require("../assets/case-thum-2.png")} />  
           </div>
           <div className="text">
-            <h2>긱 이코노미 플랫폼</h2>
+            <h2>긱 이코노미 플랫폼 <Link to="/csdetail3"><button className="go-detail-btn">본문 읽기<img src="images/ic_go_detail.png"></img></button></Link></h2>
             <p>Agile 방식으로의 Demo 및 짧은 Feedback을 통해 시장 요구사항을 기민하게 반영하고 MVP부터 빠르게 출시<br/>
               AWS EKS 및 Appmesh, X-ray 등을 활용하여 고객 사용에 탄력적으로 대응하며 실시간으로 분석</p>
           </div>
@@ -53,7 +53,7 @@ function CaseStudy(props) {
             <img src={require("../assets/case-thum-3.png")} />  
           </div>
           <div className="text">
-            <h2>Agile 방법론 전사 확산</h2>
+            <h2>Agile 방법론 전사 확산 <Link to="/csdetail4"><button className="go-detail-btn">본문 읽기<img src="images/ic_go_detail.png"></img></button></Link></h2>
             <p>고객 맞춤형 운영 방법론 및 모델 제시<br/>
               필요 기술 및 역량을 정의하고, 성장 전략 및 로드맵을 제안함으로써 이후 비즈니스 효과 증대에 기여</p>
           </div>

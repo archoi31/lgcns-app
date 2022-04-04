@@ -75,6 +75,8 @@ function Main(props) {
             <img src="images/aws_badge_2.png" />
             <img src="images/aws_badge_3.png" />
             <img src="images/aws_badge_4.png" />
+            <img src="images/aws_badge_5.png" />
+            <img src="images/aws_badge_6.png" />
           </div>
 
           고객이 원하는 것을 빠르게 캐치하여 서비스 반영하기 위해서, 

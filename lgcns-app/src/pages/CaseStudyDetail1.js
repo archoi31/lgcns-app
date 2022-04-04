@@ -1,6 +1,6 @@
 import React from "react";
 import { FullPage, Slide } from 'react-full-page';
-import '../style/casedetail1.scss';
+import '../style/casedetail.scss';
 import Footer from "../components/Footer";
 
 
@@ -8,7 +8,7 @@ function CaseStudyDetail1(props) {
   return (
     <FullPage controls controlsProps={{className: 'fullpage-controls'}} className="fullpage">
     <Slide className="fullpage-slide case-detail-slide1">
-      <div className="case-top">
+      <div className="case-top detail1">
         <p className="tit">
           <span>Case Study</span>
           <h2>A항공사 Cloud Journey</h2>
@@ -20,19 +20,27 @@ function CaseStudyDetail1(props) {
       <div className="case-list">
           <div className="right">
             <dl >
-                <dt><img src="/images/ic_case_1.svg"></img>Cloud Consulting</dt>
+                <dt><img src="/images/ic_case_1.svg"></img>Cloud Consulting
+                <img src="/images/case_down.svg" className="case-down"></img>
+                </dt>
                 <dd></dd>
             </dl>
           </div>
           <div className="left">
-            <dl>
-                <dd><img src="/images/img_case_detail1_1.png"></img></dd>
-                <dt>Cloud Migration<img src="/images/ic_case_2.svg"></img></dt>
+            <dl className="detail1_1">
+                <dd><img src="/images/img_case_detail1_1.png"></img>
+                </dd>
+                <dt>Cloud Migration<img src="/images/ic_case_2.svg"></img>
+                  <img src="/images/case_down.svg" className="case-down"></img>
+                </dt>
             </dl>
           </div>
           <div className="right">
             <dl>
-                <dt><img src="/images/ic_case_3.svg"></img>AM 역량 확보</dt>
+                <dt>
+                  <img src="/images/ic_case_3.svg"></img>AM 역량 확보
+                  <img src="/images/case_down.svg" className="case-down"></img>
+                </dt>
                 <dd>
                   <div className="ct-box">
                     <h3>AM 역량 확보를 위한 조직 변화관리 서비스</h3>
@@ -53,8 +61,10 @@ function CaseStudyDetail1(props) {
          
           <div className="left">
             <dl>
+                <dt>AM 로드맵 수립<img src="/images/ic_case_4.svg"></img>
+                <img src="/images/case_down.svg" className="case-down"></img>
+                </dt>
                 <dd><img src="/images/img_case_detail1_2.png"></img></dd>
-                <dt>AM 로드맵 수립<img src="/images/ic_case_4.svg"></img></dt>
             </dl>
           </div>
           <div className="right">
