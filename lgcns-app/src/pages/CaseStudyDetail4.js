@@ -31,7 +31,7 @@ function CaseStudyDetail4(props) {
             <dl className="detail4_2">
                 <dd><img src="/images/img_agile.png"></img></dd>
                 <dt>
-                  애자일 일하는 방식 습득<img src="/images/ic_case_2.svg"></img>
+                  애자일 일하는 <br/>방식 습득<img src="/images/ic_case_2.svg"></img>
                   <img src="/images/case_down.svg" className="case-down"></img>  
                 </dt>
             </dl>
