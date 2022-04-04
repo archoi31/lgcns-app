@@ -71,6 +71,10 @@ const Header = function () {
               </Link>
             </li>
           </ul>
+
+          <button className="go-btn">
+            LG CNS 바로가기<img src="/images/ic_open.svg"></img>
+          </button>
         </div>
       </div>
       <section className="m-header">

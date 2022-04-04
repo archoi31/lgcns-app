@@ -10,12 +10,17 @@ const Footer = function () {
   return (
     <div className="footer">
       <div className="floatingTop">
-        <a href="javascript:void(0)" title="맨위로 이동">
+        <a title="맨위로 이동" onClick={(e) => e.preventDefault}>
           <span>맨위로</span>
         </a>
       </div>
       <div className="info">
-        <span className="logo"></span>
+        <div className="logo">
+          <img src="/images/footer_logo.png"></img>
+          <button>
+            바로가기<img src="/images/ic_open.svg"></img>
+          </button>
+        </div>
         서울시 강서구 마곡중앙8로 71 LG사이언스파크 E13, E14
       </div>
       <div className="copy">Copyright ©LG CNS. All right reserved.</div>

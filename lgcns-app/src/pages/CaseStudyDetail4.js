@@ -6,8 +6,7 @@ import Footer from "../components/Footer";
 
 function CaseStudyDetail4(props) {
   return (
-    <FullPage controls controlsProps={{className: 'fullpage-controls'}} className="fullpage">
-    <Slide className="fullpage-slide case-detail-slide1">
+    <div className="case-detail">
       <div className="case-top detail4">
         <p className="tit">
           <span>Case Study</span>
@@ -61,8 +60,8 @@ function CaseStudyDetail4(props) {
           </div>
           <div className="end-box">3 years</div>
         </div>
-    </Slide>
-  </FullPage>
+      <Footer/>
+    </div>
     );
 }
 

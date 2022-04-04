@@ -1,6 +1,8 @@
 @import "./mixin";
 
-.fullpage-slide {
+.case-detail {
+  position: relative;
+  padding-bottom: 30vh;
   .case-top{
     &.detail1{
       background-image: url('../../public/images/case_detail_bg1.png');
@@ -17,7 +19,7 @@
     
     background-repeat: no-repeat;
     min-height: 300px;
-    padding-top:18vh;
+    padding-top:calc(6vh + 100px);
     color:#fff;
     text-align: center;
     .tit{
@@ -76,7 +78,7 @@
     .end-box{
       position: absolute;
       left:calc(50% - 50px);
-      bottom:-20%;
+      bottom:-10%;
       padding:8px;
       border-radius: 8px;
       background-color: #bb0841;
@@ -90,7 +92,7 @@
       position: absolute;
       background: #ccc;
       width: 1px;
-      height: 120%;
+      height: 110%;
       left: 50%;
       top: 0;
     }
@@ -315,21 +317,18 @@
       margin-top: -100px !important;
     }
     .detail4_2{
-      margin-top: -100px !important;
-      height: 160px;
+      height: 200px;
       dt{
-        vertical-align: top;
+        vertical-align: middle;
       }
       dd{
-        vertical-align: top;
+        vertical-align: middle;
         img{
-          margin-top:-100px;
           width: 360px;
         }
       }
     }
     .detail4_3{
-      margin-top: -200px !important;
       dt{
         vertical-align: middle;
       }
@@ -339,9 +338,6 @@
           margin-top: 0;
         }
       }
-    }
-    .detail4_4{
-      margin-top: -100px !important;
     }
     .ct-list{
       ul{
@@ -387,27 +383,6 @@
           }
         }
       }
-    }
-  }
-  &:last-child{
-    .case-list{
-      &::before{
-        height: 120% !important;
-      }
-    }
-  }
-  &.case-detail-slide1{
-    .case-list{
-      &::before{
-        height: 100vh;
-      }
-    }
-  }
-  &.case-detail-slide2{
-    position: relative;
-    .case-list{
-      
-      padding-top:12vh;
     }
   }
 }

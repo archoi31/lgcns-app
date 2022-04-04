@@ -103,6 +103,29 @@ html {
             }
           }
         }
+        .go-btn{
+          position: absolute;
+          bottom: 24px;
+          width: calc(100% - 48px);
+          left:24px;
+          color:#444;
+          font-weight: 600;
+          display: inline-block;
+          background-color: #eee;
+          font-size: 1.8rem;
+          border-radius: 8px;
+          padding: 8px 16px;
+          border:0;
+          &:hover{
+            color:$primary-color;
+            text-decoration: underline;
+          }
+          img{
+            vertical-align: middle;
+            padding-left: 4px;
+            margin-top:-4px;
+          }
+        }
       }
     }
     .m-header {
@@ -228,7 +251,7 @@ html {
       }
       width: 100%;
       border-top: 1px solid #dddddd;
-      padding: 4vh 5vw;
+      padding: 3vh 5vw;
       background-color: #fff;
       display: flex;
       justify-content: space-between;
@@ -237,20 +260,39 @@ html {
       position: absolute;
       bottom: 0;
       left: 0;
-      .logo {
-        display: inline-block;
-        background-image: url("../public/images/footer_logo.png");
-        background-size: 100%;
-        background-repeat: no-repeat;
-        width: 173px;
-        height: 39px;
-        vertical-align: middle;
-        margin-right: 2.4rem;
-      }
+      
       .info {
         color: #444444;
-        img {
-          padding-right: 20px;
+        .logo {
+          background-size: 100%;
+          margin-bottom: 16px;
+          > img{
+            padding-right: 8px ;
+            margin-bottom: -8px;
+            vertical-align: baseline;
+          }
+          button{
+            color:#444;
+            font-weight: 600;
+            display: inline-block;
+            background-color: #fff;
+            font-size: 1.8rem;
+            border-radius: 8px;
+            padding: 4px 16px;
+            border:0;
+            &:hover{
+              color:$primary-color;
+              text-decoration: underline;
+              background-color: #eee;
+            }
+  
+            img{
+              margin-top: -4px;
+              padding-left: 4px;
+              vertical-align: middle;
+            }
+          }
+          
         }
       }
       .copy {

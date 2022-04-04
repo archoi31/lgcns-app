@@ -1,13 +1,11 @@
 import React from "react";
-import { FullPage, Slide } from 'react-full-page';
 import '../style/casedetail.scss';
 import Footer from "../components/Footer";
 
 
 function CaseStudyDetail2(props) {
   return (
-    <FullPage controls controlsProps={{className: 'fullpage-controls'}} className="fullpage">
-    <Slide className="fullpage-slide case-detail-slide1">
+    <div className="case-detail">
       <div className="case-top detail2" >
         <p className="tit">
           <span>Case Study</span>
@@ -53,11 +51,7 @@ function CaseStudyDetail2(props) {
                 </dt>
             </dl>
           </div>
-        </div>
-    </Slide>
-    <Slide className="fullpage-slide case-detail-slide2">
-       <div className="case-list">
-       <div className="right">
+          <div className="right">
             <dl className="detail2_3">
                 <dt><img src="/images/ic_case_3.svg"></img>DX 서비스 발굴
                 <img src="/images/case_down.svg" className="case-down"></img></dt>
@@ -79,12 +73,10 @@ function CaseStudyDetail2(props) {
                 </dd>
             </dl>
           </div>
-          
           <div className="end-box">3 years</div>
         </div>
       <Footer/>
-    </Slide>
-  </FullPage>
+    </div>
     );
 }
 

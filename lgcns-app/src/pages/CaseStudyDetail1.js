@@ -1,13 +1,11 @@
 import React from "react";
-import { FullPage, Slide } from 'react-full-page';
 import '../style/casedetail.scss';
 import Footer from "../components/Footer";
 
 
 function CaseStudyDetail1(props) {
   return (
-    <FullPage controls controlsProps={{className: 'fullpage-controls'}} className="fullpage">
-    <Slide className="fullpage-slide case-detail-slide1">
+    <div className="case-detail">
       <div className="case-top detail1">
         <p className="tit">
           <span>Case Study</span>
@@ -16,7 +14,6 @@ function CaseStudyDetail1(props) {
         </p> 
         <p className="sub-tit"><b>빠른 서비스 혁신</b>을 통한 고객 만족 극대화</p>  
       </div>
-
       <div className="case-list">
           <div className="right">
             <dl >
@@ -54,11 +51,7 @@ function CaseStudyDetail1(props) {
                 </dd>
             </dl>
           </div>
-        </div>
-    </Slide>
-    <Slide className="fullpage-slide case-detail-slide2">
-       <div className="case-list">
-         
+          
           <div className="left">
             <dl>
                 <dt>AM 로드맵 수립<img src="/images/ic_case_4.svg"></img>
@@ -76,8 +69,7 @@ function CaseStudyDetail1(props) {
           <div className="end-box">3 years</div>
         </div>
       <Footer/>
-    </Slide>
-  </FullPage>
+  </div>
     );
 }
 
