@@ -334,11 +334,20 @@ html {
             height: 12vw;
           }
         }
-        .logo {
-          display: block;
-          margin: 0 auto 0.8rem;
-          width: 100px;
-          height: 29px;
+        .info{
+          .logo {
+            display: block;
+            > img{
+              width: 100px;
+              vertical-align: middle;
+              padding-bottom:8px;
+            }
+            button{
+              margin-top: .4rem;
+              font-size: 1.4rem;
+              padding:.4rem;
+            }
+          }
         }
         .copy {
           margin-top: 0.8rem;

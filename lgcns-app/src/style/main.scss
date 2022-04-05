@@ -233,12 +233,14 @@
         .txt-con {
           transition: all 0.5s;
           background-color: #f4f4f4;
-          height: 120px;
           position: relative;
           padding: 20px;
           transition: all 0.5s;
           p {
             padding-top: 20px;
+            overflow:hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
           }
           span {
             position: absolute;
@@ -523,8 +525,7 @@
         .slick-slide {
           > div {
             .txt-con {
-              height: 12vh;
-              padding: 0.8rem 1.6rem;
+              padding: 1.6rem;
             }
           }
         }
