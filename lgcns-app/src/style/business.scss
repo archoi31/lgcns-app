@@ -124,7 +124,7 @@
   }
   .tab-content {
     margin: 0 auto;
-    padding: 4.8rem;
+    padding: 2.8rem 4.8rem;
     display: none;
     width: 90vw;
     background-color: #f4f4f4;
@@ -144,11 +144,12 @@
         flex-wrap: wrap;
         margin-right: 1vw;
         .icon {
-          width: 80px;
-          height: 80px;
+          width: 70px;
+          height: 70px;
           background-color: $primary-color;
           background-repeat: no-repeat;
           border-radius: 50%;
+          background-size: 60%;
           background-position: center;
           &.icon1 {
             background-image: url("../../public/images/business-activities.png");
@@ -163,7 +164,10 @@
 
         .txt {
           padding-left: 1.6rem;
-          max-width: 22vw;
+          max-width: 18vw;
+          &.long-txt{
+            max-width: 30vw;
+          }
           .txt-memo {
             text-decoration: underline;
             font-weight: bold;
@@ -230,6 +234,20 @@
 }
 @include desktop-md {
   .fullpage-slide {
+    &.business-slide2{
+      .tab{
+        padding-top:100px;
+        li{
+          padding:1.6rem;
+          svg{
+            margin-bottom: .8rem;
+          }
+          p{
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
     .tab-content {
       .service-wrap {
         .service:nth-child(2) {
@@ -271,7 +289,6 @@
             background-size: 60%;
           }
           .txt {
-            max-width: 23vw;
             .txt-memo {
               .pop-memo {
                 &.memo3 {
@@ -288,6 +305,14 @@
 }
 @include tablet {
   .fullpage-slide {
+    .tab {
+      li {
+        padding: 1rem;
+        p {
+          display: none;
+        }
+      }
+    }
     &.business-slide1,
     &.business-slide2,
     &.business-slide3{
@@ -350,6 +375,9 @@
           }
           .txt {
             max-width: 100%;
+            &.long-txt{
+              max-width: 100%;
+            }
             h2 {
               font-size: 1.8rem;
               padding: 1.6rem 0 0.8rem;
@@ -369,14 +397,7 @@
 }
 @include mobile {
   .fullpage-slide {
-    .tab {
-      li {
-        padding: 1rem;
-        p {
-          display: none;
-        }
-      }
-    }
+   
     .tab-content {
       padding: 2rem;
       .service-wrap {
@@ -385,7 +406,7 @@
           .icon {
             width: 70px;
             height: 70px;
-            background-size: 70%;
+            background-size: 60%;
           }
           .txt {
             max-width: 80vw !important;
