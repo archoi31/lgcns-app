@@ -73,42 +73,60 @@ const SlickSlider = ({ data, handleRen }) => {
           <span>H 금융사</span>
           <p>소비 포인트 플랫폼을 소개합니다. 소비 포인트 플랫폼을…</p>
         </div>
-        <img src={require("../assets/main-thum-1.png")} />
+        <div className="img-con">
+          <img src={require("../assets/main-thum-1.png")} />
+          <div className="img-overlay"><p className="case-img-description">파일럿 시스템을 함께 만들면서-S2S-Application Modernization에 필요한 기술 습득</p></div>
+        </div>
       </div>
       <div>
         <div className="txt-con">
           <span>L 그룹사</span>
           <p>방문 포털 시스템</p>
         </div>
-        <img src={require("../assets/main-thum-2.png")} />
+        <div className="img-con">
+          <img src={require("../assets/main-thum-2.png")} />
+          <div className="img-overlay"><p className="case-img-description">파일럿 시스템을 함께 만들면서-S2S-Application Modernization에 필요한 기술 습득</p></div>
+        </div>
       </div>
       <div>
         <div className="txt-con">
           <span>L 금융사</span>
           <p>긱 이코노미 플랫폼</p>
         </div>
-        <img src={require("../assets/main-thum-3.png")} />
+        <div className="img-con">
+          <img src={require("../assets/main-thum-3.png")} />
+          <div className="img-overlay"><p className="case-img-description">파일럿 시스템을 함께 만들면서-S2S-Application Modernization에 필요한 기술 습득</p></div>
+        </div>
       </div>
       <div>
         <div className="txt-con">
           <span>H 금융사</span>
           <p>소비 포인트 플랫폼을 소개합니다. 소비 포인트 플랫폼을…</p>
         </div>
-        <img src={require("../assets/main-thum-1.png")} />
+        <div className="img-con">
+          <img src={require("../assets/main-thum-1.png")} />
+          <div className="img-overlay"><p className="case-img-description">파일럿 시스템을 함께 만들면서-S2S-Application Modernization에 필요한 기술 습득</p></div>
+        </div>
       </div>
       <div>
         <div className="txt-con">
           <span>L 그룹사</span>
           <p>방문 포털 시스템</p>
         </div>
-        <img src={require("../assets/main-thum-2.png")} />
+        <div className="img-con">
+          <img src={require("../assets/main-thum-2.png")} />
+          <div className="img-overlay"><p className="case-img-description">파일럿 시스템을 함께 만들면서-S2S-Application Modernization에 필요한 기술 습득</p></div>
+        </div>
       </div>
       <div>
         <div className="txt-con">
           <span>L 금융사</span>
           <p>긱 이코노미 플랫폼</p>
         </div>
-        <img src={require("../assets/main-thum-3.png")} />
+        <div  className="img-con">
+          <img src={require("../assets/main-thum-3.png")} />
+          <div className="img-overlay"><p className="case-img-description">파일럿 시스템을 함께 만들면서-S2S-Application Modernization에 필요한 기술 습득</p></div>
+        </div>
       </div>
     </Slider>
   );

@@ -79,8 +79,7 @@ function Main(props) {
             <img src="images/aws_badge_6.png" />
           </div>
 
-          고객이 원하는 것을 빠르게 캐치하여 서비스 반영하기 위해서, 
-        기업은 “System , Process, 조직 역량” 세 가지 측면에서 반드시 변화해야 합니다.
+         
         </p>
       </div>
       <div className="asw-wrap">
