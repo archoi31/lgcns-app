@@ -20,7 +20,7 @@ function CaseStudyDetail3(props) {
           <div className="right">
             <dl className="detail3_1">
                 <dt>
-                  <img src="/images/ic_case_1.svg"></img>클라우드 전환
+                  <img src="/images/ic_case_1.svg" className="case-icon"></img>클라우드 전환
                   <img src="/images/case_down.svg" className="case-down"></img>
                 </dt>
                 <dd>
@@ -33,6 +33,10 @@ function CaseStudyDetail3(props) {
           </div>
           <div className="left">
             <dl className="detail3_2">
+                <dt>
+                  Cloud Migration<img src="/images/ic_case_2.svg" className="case-icon"></img>
+                  <img src="/images/case_down.svg" className="case-down"></img>
+                </dt>
                 <dd>
                   <div className="ct-list">
                     <ul>
@@ -43,16 +47,12 @@ function CaseStudyDetail3(props) {
                     </ul>
                   </div>
                 </dd>
-                <dt>
-                  Cloud Migration<img src="/images/ic_case_2.svg"></img>
-                  <img src="/images/case_down.svg" className="case-down"></img>
-                </dt>
             </dl>
           </div>
           <div className="right">
             <dl className="detail3_3">
                 <dt>
-                  <img src="/images/ic_case_3.svg"></img>클라우드 전략 구체화
+                  <img src="/images/ic_case_3.svg" className="case-icon"></img>클라우드 전략 구체화
                   <img src="/images/case_down.svg" className="case-down"></img>  
                 </dt>
                 <dd>
@@ -76,7 +76,7 @@ function CaseStudyDetail3(props) {
           <div className="left">
             <dl className="detail3_4">
                 <dd></dd>
-                <dt>AM 로드맵 수립<img src="/images/ic_case_4.svg"></img></dt>
+                <dt>AM 로드맵 수립<img src="/images/ic_case_4.svg" className="case-icon"></img></dt>
             </dl>
           </div>
           <div className="end-box">3 years</div>

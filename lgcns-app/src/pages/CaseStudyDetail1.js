@@ -17,7 +17,7 @@ function CaseStudyDetail1(props) {
       <div className="case-list">
           <div className="right">
             <dl >
-                <dt><img src="/images/ic_case_1.svg"></img>Cloud Consulting
+                <dt><img src="/images/ic_case_1.svg"  className="case-icon"></img>Cloud Consulting
                 <img src="/images/case_down.svg" className="case-down"></img>
                 </dt>
                 <dd></dd>
@@ -25,17 +25,17 @@ function CaseStudyDetail1(props) {
           </div>
           <div className="left">
             <dl className="detail1_1">
-                <dd><img src="/images/img_case_detail1_1.png"></img>
-                </dd>
-                <dt>Cloud Migration<img src="/images/ic_case_2.svg"></img>
+                <dt>Cloud Migration<img src="/images/ic_case_2.svg"  className="case-icon"></img>
                   <img src="/images/case_down.svg" className="case-down"></img>
                 </dt>
+                <dd><img src="/images/img_case_detail1_1.png"></img>
+                </dd>
             </dl>
           </div>
           <div className="right">
             <dl>
                 <dt>
-                  <img src="/images/ic_case_3.svg"></img>AM 역량 확보
+                  <img src="/images/ic_case_3.svg" className="case-icon"></img>AM 역량 확보
                   <img src="/images/case_down.svg" className="case-down"></img>
                 </dt>
                 <dd>
@@ -54,7 +54,7 @@ function CaseStudyDetail1(props) {
           
           <div className="left">
             <dl>
-                <dt>AM 로드맵 수립<img src="/images/ic_case_4.svg"></img>
+                <dt>AM 로드맵 수립<img src="/images/ic_case_4.svg"  className="case-icon"></img>
                 <img src="/images/case_down.svg" className="case-down"></img>
                 </dt>
                 <dd><img src="/images/img_case_detail1_2.png"></img></dd>
@@ -62,7 +62,7 @@ function CaseStudyDetail1(props) {
           </div>
           <div className="right">
             <dl>
-                <dt><img src="/images/ic_case_5.svg"></img>AM 추진</dt>
+                <dt><img src="/images/ic_case_5.svg"  className="case-icon"></img>AM 추진</dt>
                 <dd></dd>
             </dl>
           </div>

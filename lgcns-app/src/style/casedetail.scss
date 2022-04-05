@@ -18,7 +18,6 @@
     }
     
     background-repeat: no-repeat;
-    min-height: 300px;
     padding-top:calc(6vh + 100px);
     color:#fff;
     text-align: center;
@@ -45,7 +44,8 @@
     }
     .sub-tit{
       padding-top:4rem;
-      padding-bottom:6rem;
+      padding-bottom:6vh;
+      line-height: 160%;
       font-size: 3.2rem;
       font-weight: 400;
       color: #DDDDDD;
@@ -116,7 +116,7 @@
           font-weight: 700;
           color:#111;
           position: relative;
-          img{
+          .case-icon{
             padding-right:1.6rem;
           }
           .case-down{
@@ -151,10 +151,11 @@
           line-height: 30px;
           font-weight: 800;
           position: relative;
-          display: inline-block;
+          display: block;
           padding-left: 32px;
           > img{
             margin-top:-120px;
+            
           }
         }
       }
@@ -179,7 +180,7 @@
           font-weight: 700;
           color:#111;
           position: relative;
-          img{
+          .case-icon{
             padding-left:1.6rem;
           }
           .case-down{
@@ -208,47 +209,20 @@
             top: calc(50% + 4px);
          }
         }
-        dd{
-          display: inline-flex;
-          padding-right:3.2rem;
+        dd{           
+          display: block;
+          padding-right: 3.2rem;
           font-size: 24px;
           line-height: 30px;
           font-weight: 800;
-          text-align: left;
+          text-align: right;
+          >img{
+            max-width: 40vw;
+          }
         }
       }
     }
-    .detail1_1{
-      dt{
-        vertical-align: middle;
-      }
-      dd{
-        vertical-align: middle;
-      }
-    }
-    .detail2_1{
-      height: 200px;
-      dt{
-        vertical-align: top;
-      }
-      dd{
-        vertical-align: top;
-        .ct-box{
-          margin-top: 0px;
-        }
-      }
-    }
-    .detail2_2{
-      dt{
-        vertical-align: middle;
-      }
-      dd{
-        vertical-align: middle;
-        .ct-box{
-          margin-top: 0px;
-        }
-      }
-    }
+    
     .detail2_3{
       dt{
         vertical-align: top;
@@ -274,72 +248,27 @@
         }
       }
     }
-    .detail3_1{
-      dt{
-        vertical-align: top;
-      }
-      dd{
-        vertical-align: top;
-        .ct-box{
-          margin-top: 0px;
-          text-align: center;
-          h3{
-            text-align: left;
-          }
-          img{
-            padding:24px;
-          }
-        }
-      }
-    }
-    .detail3_2{
-      margin-top: -200px !important;
-      dt{
-        vertical-align: middle;
-      }
-      dd{
-        vertical-align: middle;
-      }
-    }
     .detail3_3{
-      dt{
-        vertical-align: top;
-      }
       dd{
-        vertical-align: top;
         .ct-box{
-          margin-top:16px;
-          width: 480px;
+          &:last-child{
+            margin-top:16px;
+          }
         }
       }
-    }
-    .detail3_4{
-      margin-top: -100px !important;
     }
     .detail4_2{
-      height: 200px;
-      dt{
-        vertical-align: middle;
-      }
       dd{
-        vertical-align: middle;
         img{
           width: 360px;
         }
       }
     }
-    .detail4_3{
-      dt{
-        vertical-align: middle;
-      }
-      dd{
-        vertical-align: middle;
-        .ct-box{
-          margin-top: 0;
-        }
-      }
-    }
     .ct-list{
+        
+      width: 400px;
+      max-width: 40vw;
+      display: inline-block;
       ul{
         li{
           border: 2px solid #BB084180;
@@ -357,11 +286,12 @@
     }
 
     .ct-box{
+      display: inline-block;
       background-color: #F4F4F4;
-      margin-top:-400px;
       width: 400px;
       border-radius: 16px;
-      
+      max-width: 40vw;
+      text-align: left;
       h3{
         font-size: 2.4rem;
         padding:24px 24px 8px;
@@ -391,11 +321,154 @@
  
 }
 @include desktop-sm {
+  
 }
 @include tablet {
+  .case-detail{
+    .case-top{
+      .tit{
+        h1{
+          font-size: 3.2rem;
+        }
+        h2{
+          font-size: 2.4rem;
+        } 
+        span{
+          font-size: 2.4rem;
+        } 
+      }
+      .sub-tit{
+        font-size: 2.4rem;
+      }
+    }
+    .case-list{
+      dl{
+        dt{
+          font-size: 2rem;;
+          .case-icon{
+            width: 72px;
+          }
+          .case-down{
+            width: 16px;
+          }
+        }
+      }
+      .ct-box{
+        h3{
+          font-size:2rem;
+        }
+      }
+    } 
+  }
 }
 @include mobile {
-
+  .case-detail{
+    .case-top{
+      padding-top:calc(6vh + 60px);
+      .tit{
+        h1{
+          font-size: 2.8rem;
+          padding-top:1.6rem;
+        }
+        h2{
+          font-size: 2rem;
+        } 
+        span{
+          font-size: 2rem;
+        } 
+      }
+      .sub-tit{
+        padding-top: 2.8rem;
+        font-size: 2rem;
+        &::after,
+        &::before{
+          display: none;
+        }
+      }
+    }
+    .case-list{
+      .end-box {
+        left: 0;
+      }
+      &::before{
+        left:5vw;
+      }
+      .right {
+        dl {
+          width: 95%;
+          padding-left: 50px;
+          dt{
+            .case-icon{
+              padding-right: 0.8rem;
+              width: 56px;
+            }
+            .case-down{
+              top: 50%;
+              left: -15vw;
+            }
+          }
+        } 
+      }
+      .left{
+        text-align: right;
+        dl{
+          width: 95%;
+          text-align: left;
+          padding-right: 00px;
+          padding-left: 50px;
+          dt{        
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            .case-icon {
+              padding-left: 0;
+              width: 56px;
+              padding-right: .8rem;
+            }
+            &::before {
+              left: -50px;
+              top: 50%;
+            }
+            &::after {
+              left: -42px;
+              top: calc(50% + 4px);
+            }
+            .case-down{
+              top: 50%;
+              left: -15vw;
+            }
+          }
+        }
+      }
+      dd{
+        width: 100%;
+        padding-left: 0px !important;
+        > img {
+          max-width: 100% !important;
+        }
+        .ct-box{
+          width: 32px;
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+      .ct-list{
+        max-width: 100%;
+        ul{
+          li {
+            border-radius: 8px;
+            margin: 8px;
+            font-size: 1.6rem;
+            text-align: center;
+            line-height: 24px;
+            padding: 8px 16px;
+            color: #BB0841;
+          }
+        }
+        
+      }
+    } 
+  }
 }
 @include mobile-sm {
 }

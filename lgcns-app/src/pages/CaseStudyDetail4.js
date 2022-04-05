@@ -20,7 +20,7 @@ function CaseStudyDetail4(props) {
           <div className="right">
             <dl className="detail4_1">
                 <dt>
-                  <img src="/images/ic_case_1.svg"></img>비즈니스 개선 플래닝
+                  <img src="/images/ic_case_1.svg"  className="case-icon"></img>비즈니스 개선 플래닝
                   <img src="/images/case_down.svg" className="case-down"></img>
                 </dt>
                 <dd></dd>
@@ -28,17 +28,17 @@ function CaseStudyDetail4(props) {
           </div>
           <div className="left">
             <dl className="detail4_2">
-                <dd><img src="/images/img_agile.png"></img></dd>
                 <dt>
-                  애자일 일하는 <br/>방식 습득<img src="/images/ic_case_2.svg"></img>
+                  애자일 일하는 방식 습득<img src="/images/ic_case_2.svg"  className="case-icon"></img>
                   <img src="/images/case_down.svg" className="case-down"></img>  
                 </dt>
+                <dd><img src="/images/img_agile.png"></img></dd>
             </dl>
           </div>
           <div className="right">
             <dl className="detail4_3">
                 <dt>
-                  <img src="/images/ic_case_3.svg"></img>애자일 방식<br/>일하는 조직 확대
+                  <img src="/images/ic_case_3.svg"  className="case-icon"></img>애자일 방식 일하는 조직 확대
                   <img src="/images/case_down.svg" className="case-down"></img>
                 </dt>
                 <dd>
@@ -54,8 +54,8 @@ function CaseStudyDetail4(props) {
           </div>
           <div className="left">
             <dl  className="detail4_4">
+                <dt>DX 진행<img src="/images/ic_case_4.svg"  className="case-icon"></img></dt>
                 <dd></dd>
-                <dt>DX 진행<img src="/images/ic_case_2.svg"></img></dt>
             </dl>
           </div>
           <div className="end-box">3 years</div>

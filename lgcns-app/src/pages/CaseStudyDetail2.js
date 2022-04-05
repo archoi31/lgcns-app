@@ -18,7 +18,7 @@ function CaseStudyDetail2(props) {
       <div className="case-list">
           <div className="right">
             <dl className="detail2_1">
-                <dt><img src="/images/ic_case_1.svg"></img>AM 위한 DevOps<br/>환경 구성
+                <dt><img src="/images/ic_case_1.svg" className="case-icon"></img>AM 위한 DevOps<br/>환경 구성
                 <img src="/images/case_down.svg" className="case-down"></img>
                 </dt>
                 <dd>
@@ -37,6 +37,9 @@ function CaseStudyDetail2(props) {
           </div>
           <div className="left">
             <dl className="detail2_2">
+                <dt>MSA 시범 적용<img src="/images/ic_case_2.svg" className="case-icon"></img>
+                  <img src="/images/case_down.svg" className="case-down"></img>
+                </dt>
                 <dd>
                 <div className="ct-box">
                     <h3>긱 이코노미 플랫폼</h3>
@@ -46,14 +49,12 @@ function CaseStudyDetail2(props) {
                     </ul>
                   </div>
                 </dd>
-                <dt>MSA 시범 적용<img src="/images/ic_case_2.svg"></img>
-                <img src="/images/case_down.svg" className="case-down"></img>
-                </dt>
+                
             </dl>
           </div>
           <div className="right">
             <dl className="detail2_3">
-                <dt><img src="/images/ic_case_3.svg"></img>DX 서비스 발굴
+                <dt><img src="/images/ic_case_3.svg" className="case-icon"></img>DX 서비스 발굴
                 <img src="/images/case_down.svg" className="case-down"></img></dt>
                 <dd>
                   <div className="ct-box">
