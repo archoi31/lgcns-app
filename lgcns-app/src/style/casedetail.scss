@@ -256,6 +256,7 @@
     .detail3_3{
       dd{
         .ct-box{
+          display: block;
           &:last-child{
             margin-top:16px;
           }
@@ -281,7 +282,7 @@
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
           border-radius: 8px;
           margin: 8px;          
-          font-size: 24px;
+          font-size: 2rem;
           text-align: center;
           line-height: 36px;
           padding:8px 16px;
