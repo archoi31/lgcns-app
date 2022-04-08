@@ -222,7 +222,7 @@
           font-weight: 800;
           text-align: right;
           >img{
-            max-width: 40vw;
+            max-width: 100%;
           }
         }
       }
@@ -273,7 +273,7 @@
     .ct-list{
         
       width: 400px;
-      max-width: 40vw;
+      max-width: 100%;
       display: inline-block;
       ul{
         li{
@@ -296,7 +296,7 @@
       background-color: #F4F4F4;
       width: 400px;
       border-radius: 16px;
-      max-width: 40vw;
+      max-width: 100%;
       text-align: left;
       h3{
         font-size: 2.4rem;
@@ -394,19 +394,20 @@
       padding-top:calc(6vh + 60px);
       .tit{
         h1{
-          font-size: 2.8rem;
+          font-size: 2.4rem;
           padding-top:1.6rem;
         }
         h2{
-          font-size: 2rem;
+          font-size: 1.6rem;
+          padding:0.8rem 0 0 0;
         } 
         span{
-          font-size: 2rem;
+          font-size: 1.85rem;
         } 
       }
       .sub-tit{
         padding-top: 2.8rem;
-        font-size: 2rem;
+        font-size: 1.6rem;
         &::after,
         &::before{
           display: none;
