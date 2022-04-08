@@ -18,7 +18,7 @@ function CaseStudyDetail2(props) {
       <div className="case-list">
           <div className="right">
             <dl className="detail2_1">
-                <dt><img src="/images/ic_case_1.svg" className="case-icon"></img>AM 위한 DevOps<br/>환경 구성
+                <dt><img src="/images/ic_case_1.svg" className="case-icon"></img>AM 위한 DevOps 환경 구성
                 <img src="/images/case_down.svg" className="case-down"></img>
                 </dt>
                 <dd>
